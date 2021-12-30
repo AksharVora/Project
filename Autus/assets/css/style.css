@@ -14,7 +14,24 @@
     1. Web fonts 
     2. Base theme style
     3. Header section style
-    4. Hero section style
+    4. Home page style
+
+        4.1 Hero section style
+        4.2 Advice section style
+        4.3 Solution section style
+        4.4 How we work section style
+        4.5 How we can help section style
+        4.6 Client testimonial section style
+        4.7 Get in touch section style
+        4.8 Resources Hub section style
+        4.9 E-book section style
+        4.10 Newsletter section style
+
+    5. Footer section style
+    6. about us page style
+
+
+
 
 ------------------------------
 ----------------------------*/
@@ -1356,7 +1373,7 @@ How we work section styling end here
         text-align: center;
      }
      
- /*------------------------------------
+/*------------------------------------
  Footer section styling end here
 ------------------------------------*/
 
@@ -1474,43 +1491,351 @@ How we work section styling end here
  About video section styling end here
 ----------------------------------------*/
 
-.our-core-values {
-    padding: 170px  0 135px;
-}
+/*----------------------------------------
+ Core Value section styling start here
+----------------------------------------*/
 
-.section-title h3 {
-    font-size: 50px;
-    font-weight: 700;
-    color: #085155;
-}
+    .our-core-values {
+        padding: 170px  0 135px;
+    }
+
+    .section-title h3 {
+        font-size: 50px;
+        font-weight: 700;
+        color: #085155;
+    }
 
 
-.feat-box {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.feat-icon {
-    display: flex;
-    width: 74px;
-    height: 74px;
-    background: rgba(4, 126, 138, 0.06);
-    border-radius: 16px;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 35px;
-}
-.feat-content h5 {
-    font-size: 22px;
-    font-weight: 500;
-    color: #183B56;
-    margin-bottom: 21px;
-}
-.feat-content p {
-    font-size: 16px;
-    line-height: 28px;
-    color: #5A7184;
-    margin: 0;
-}
+    .feat-box {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .feat-icon {
+        display: flex;
+        width: 74px;
+        height: 74px;
+        background: rgba(4, 126, 138, 0.06);
+        border-radius: 16px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 35px;
+    }
+    .feat-content h5 {
+        font-size: 22px;
+        font-weight: 500;
+        color: #183B56;
+        margin-bottom: 21px;
+    }
+    .feat-content p {
+        font-size: 16px;
+        line-height: 28px;
+        color: #5A7184;
+        margin: 0;
+    }
+
+/*----------------------------------------
+ Core Value section styling end here
+----------------------------------------*/
+
+
+/*----------------------------------------
+ Our culture section styling start here
+----------------------------------------*/
+
+    .our-culture .base-img {
+
+        height: 660px;
+
+    }
+    .our-culture .base-img img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .our-culture  svg {
+        width: 100%;
+    }
+    .culture-inner {
+        position: relative;
+    }
+    .top-object {
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        z-index: 11;
+    }
+    .bottom-object {
+        width: 100%;
+        display: flex;
+        bottom: 0;
+        left: 0;
+        z-index: 11;
+    } 
+    .culture-inner:hover .base-content {
+        bottom: 0;
+        opacity: 1;
+    }
+    .base-content {
+            position: absolute;
+            z-index: 1;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            opacity: 0;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 15px;
+            padding-bottom: 7rem;
+            transition: all 0.7s linear;
+        }
+    .base-content h3    {
+        font-size: 21px;
+        color: #fff;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    .base-content p {
+        font-size: 14px;
+        font-weight: 400;
+        color: #fff;
+    }
+
+    .our-culture  .swiper-button-prev, .our-culture  .swiper-container-rtl .swiper-button-next , .our-culture  .swiper-button-next, .our-culture  .swiper-container-rtl .swiper-button-prev {
+
+        height: 50px;
+        width: 50px;
+        background: #fff !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+/*----------------------------------------
+ Our culture section styling end here
+----------------------------------------*/
+
+/*-------------------------------------------
+ Problems we solve section styling start here
+-------------------------------------------*/
+
+    .problem-solve {
+        padding: 170px 0 135px;
+    }
+
+    .icon-round {
+        display: flex;
+        width: 80px;
+        height: 80px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #707070;
+        border-radius: 50%;
+        margin-bottom: 18px;
+    }
+    .problem-description h5{
+        color: #1982C6;
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
+    .problem-description p {
+        font-size: 18px;
+        font-weight: 400;
+        color: #747474;
+        margin-bottom: 33px;
+        max-width: 354px;
+    }
+
+/*-------------------------------------------
+ Problems we solve section styling end here
+-------------------------------------------*/
+
+/*------------------------------------
+ Why choose section styling start here
+-------------------------------------*/
+
+    .why-choose {
+        padding: 150px 0;
+        background: url(../images/why-bg.jpg) no-repeat 0 0 ;
+        background-size: cover;
+    }
+    .why-title h4 {
+        color: #fff;
+        font-size: 30px;
+        font-weight: 700;
+        margin: 0 0 38px;
+    }
+    .why-title p {
+        color: #fff;
+        font-size: 22px;
+        line-height: 33px;
+        font-weight: 400;
+        margin-bottom: 40px;
+    }
+    .white-feature  {
+        background: #fff;
+        padding: 117px 117px 47px 117px;
+    }
+    .white-feature  h5 {
+        font-size: 22px;
+        color: #111;
+        font-weight: 500;
+        margin: 0 0 20px;
+    }
+    .white-feature p {
+        font-size: 14px;
+        color: #888888;
+        font-weight: 400;
+        margin: 0;
+    }
+    .feature-card {
+        margin-bottom: 60px;
+    }
+/*------------------------------------
+ Why choose section styling end here
+-------------------------------------*/
+
+/*-----------------------------
+Team section styling start here
+------------------------------*/
+
+        .team-section {
+            padding-top: 262px;
+            padding-bottom: 86px;
+            background: url(../images/Team.jpg) no-repeat 0 150px;
+        }
+
+
+        .card-thumb {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            padding-bottom: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+            max-height: 350px;
+        }
+        .card-thumb img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            right: 0;
+            bottom: 0;
+        }
+        .team-detail {
+            margin-top: 37px;
+
+        }
+
+         .team-detail h4 {
+            color: #5FB132;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 7px;
+        }
+        .team-detail span {
+            color: #047E8A;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+/*-----------------------------
+Team section styling end here
+------------------------------*/
+
+
+/*------------------------------------------
+About Testimonial section styling start here
+------------------------------------------*/
+    
+    .testimonial-section-v2 {
+        padding: 90px 0 80px;
+        background: #ECF6F8;
+        position: relative;
+    } 
+    .z-1 {
+        z-index: 1;
+    }
+    .z-0 {
+        z-index: 0;
+    }
+    .objector {
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+    .img-cover {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+
+    }
+
+    .client-avatar {
+        display: flex;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        background: #fff;
+        border: 1px dashed #777 ;
+        padding: 10px;
+        margin: 0 auto 30px;
+    }
+    .v2-client-detail > div {
+        text-align: center;
+    }
+    .v2-client-detail > div  span {
+        font-size: 18px;
+        line-height: 24px;
+        color: #222222;
+        margin-bottom: 30px;
+        display: block;
+    }
+    .v2-client-detail > div p {
+        font-size: 24px;
+        color: #181818;
+        line-height: 35px;
+        padding:0 15px;
+    }
+
+ .testimonial-section-v2 .swiper-pagination {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        bottom: 0px;
+    }
+
+    .testimonial-section-v2 .swiper-pagination-bullet {
+        width: 21px;
+        height: 21px;
+        border: 2px solid rgba(57, 61, 114, 0.4);
+        border-radius: 100%; 
+        margin-right: 11px;
+        background: transparent;
+        opacity: 1;
+
+    }
+    .testimonial-section-v2 .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background: #047E8A;
+        border-color: transparent;
+    }
+    .testimonial-section-v2 .swiper-wrapper {
+        padding-bottom: 50px;
+
+    }
+/*------------------------------------------
+About Testimonial section styling end here
+------------------------------------------*/
+

@@ -2,7 +2,9 @@ $(document).ready(function(){
 
   
   mainSliderfunction();
-	testimonialSlider()
+	testimonialSlider();
+	cultureSlider();
+	testimonialSliderv2()
 
 });
 $(window).on("load" , function(){
@@ -54,6 +56,70 @@ function testimonialSlider(){
         },
         pagination: {
           el: ".clients-testimonial .swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 1,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 50,
+        },
+      }
+	 });
+}
+
+function cultureSlider(){
+	var mySwiper3 = new Swiper('.culture-slider', {
+			effect: '',
+			loop: true,
+			speed: 100,
+			slidesPerView: 4,
+			spaceBetween: 30,
+			navigation: {
+        nextEl: '.our-culture .swiper-button-next',
+        prevEl: '.our-culture .swiper-button-prev',
+      },
+			autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 1,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 50,
+        },
+      }
+	 });
+}
+
+function testimonialSliderv2(){
+	var testimonialSliderv2 = new Swiper('.testimonial-v2-slider', {
+			effect: '',
+			loop: true,
+			speed: 100,
+			slidesPerView: 2,
+			spaceBetween: 30,
+			autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".testimonial-v2-slider .swiper-pagination",
           clickable: true,
         },
         breakpoints: {
