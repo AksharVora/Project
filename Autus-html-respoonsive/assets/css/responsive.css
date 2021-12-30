@@ -1,0 +1,243 @@
+@media(max-width: 1600px) and (min-width: 1200px) {
+	.help-tabs .help-nav-tabs .help-nav-item .nav-link {
+		padding-left: 65px;
+		padding-right: 65px;
+	}
+}
+
+@media (min-width: 1200px) and  (max-width: 1600px){
+	.container {
+	    max-width: 100%;
+	} 
+	.call-info , .mail-info{
+		font-size: 14px;
+	}
+	.navigation-area .navbar-nav .nav-link , .form-outer p , .hub-title a , .resource-detail p{
+		font-size: 14px;
+	}
+	.desc .title , .advisors-section-title-inner h2 , .solution-leftarea-inner h2 ,.how-navigator h3 , .clients-title-area .title , .hub-title h3 , .e-book-content h4{
+		font-size: 38px;
+		line-height: 1.5em;
+	}
+	.advisors-section-title-inner h2 {
+		margin-bottom: 30px;
+	}
+	.btn-gradient {
+		font-size: 16px;
+	}
+	.advisors-section-title-inner p , .client-slider-inner p , .resource-detail .post-title , .newsletter-content p {
+		font-size: 18px;
+		line-height: 1.5em;
+	}
+	.shape-one {
+		right: 0;
+	}
+	.shape-two  {
+		left: 0;
+	}
+	.how-detail-area {
+	    padding: 10%;
+	    height: 100%;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	}
+	.how-detail-area p , .how-detail-area a{
+		font-size: 18px;
+	}
+	.form-outer h3 {
+		font-size: 32px;
+		line-height: 1.69em;
+	}
+	.newsletter-content h4 {
+		font-size: 26px;
+		line-height: 1.5em;
+	}
+	.footer-info-box ul li a {
+		width: 35px;
+		height: 35px;
+		font-size: 16px;
+	}
+}
+
+
+@media(max-width: 1199px){
+	.container {
+	    max-width: 100%;
+	} 
+	.shape-one {
+		right: 0;
+	}
+	.shape-two  {
+		left: 0;
+	}
+	.call-info , .mail-info{
+		font-size: 14px;
+	}
+	.navigation-area .navbar-nav .nav-link , .form-outer p , .hub-title a , .resource-detail p{
+		font-size: 14px;
+	}
+	.desc .title , .advisors-section-title-inner h2 , .solution-leftarea-inner h2 ,.how-navigator h3 , .clients-title-area .title , .hub-title h3 , .e-book-content h4{
+		font-size: 38px;
+		line-height: 1.5em;
+	}
+	.collapse:not(.show) {
+	    display: none !important;
+	}
+	.navbar-expand-lg .navbar-toggler {
+		display: flex !important;
+		padding: 0 !important;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.25rem;
+		line-height: 1;
+		background-color: transparent;
+		border: 1px solid #5fb132;
+		color: #5fb132;
+		margin-left: auto;
+		border-radius: 0.25rem;
+		width: 50px;
+		height: 50px;
+	}
+	.how-detail-area {
+	    padding: 10%;
+	    height: 100%;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	}
+	.how-detail-area p , .how-detail-area a{
+		font-size: 18px;
+	}
+	.help-tabs .help-nav-tabs .help-nav-item .nav-link {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.navbar-collapse {
+	    position: absolute;
+	    background: #fff;
+	    width: calc(100% + 30px);
+	    left: -15px;
+	    top: 100%;
+	    z-index: 111;
+	}
+	.navigation-area .navbar-nav {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.navigation-area .navbar-nav .nav-link {
+		font-size: 18px;
+		padding:10px;
+	}
+	ul.navbar-nav.mr-auto {
+    flex-direction: column;
+}
+.i-ml-auto {
+	margin-left: auto;
+}
+}
+
+@media(max-width: 980px){
+	.help-tabs .help-nav-tabs{
+		width: 100%;
+		flex-direction: column;
+	}
+	.clients-testimonial {
+		overflow: hidden;
+	}
+	.desc-area {
+	    position: relative;
+	    z-index: 1;
+	    padding-right: 5%;
+	    margin-bottom: 15px;
+	    order: 2;
+	}
+	.hero-section , .advisors , .help-tabs-content-area , .how-help , .clients-testimonial  , .newsletter-section , footer.footer , .resources-hub , .get-in-touch{
+		padding: 50px 0;
+	}
+	.hero-section {
+	 	min-height: 60vh;
+	 	flex-direction: column;
+	    display: flex;
+	    align-items: center;
+	}
+	.hero-slider .swiper-slide {
+		width: 100% !important;
+	}
+	.hero-section-wrapper  {
+		width: 100%;
+	}
+	.d-xs-none  {
+		display: none;
+
+	}
+	.social-media-nav-items ul {
+		justify-content: flex-start;
+	}
+	br {
+		display: none !important;
+	}
+	.advisors-section-title-inner p {
+		font-size: 18px;
+	}
+	.advisors-section-title-inner p span {
+	    display: inline;
+	}
+	.desc .title, .advisors-section-title-inner h2, .solution-leftarea-inner h2, .how-navigator h3, .clients-title-area .title, .hub-title h3, .e-book-content h4 , .form-outer h3{
+		font-size: 28px;
+		line-height: 1.5em;
+	}
+	.advisors-section-title-inner h2{
+		margin-bottom: 30px;
+	}
+	.advisors-section-title{
+		flex-direction: column;
+	}
+	.solution-leftarea-inner h3{
+		font-size: 20px;
+		line-height: 1.2em;
+	}
+	.solution-leftarea-inner p{
+		font-size: 14px;
+		line-height: 1.3em;
+		margin-bottom: 15px;
+	}
+	.how-navigator .nav-tabs{
+		border: none;
+	}
+	.how-navigator .nav-tabs .nav-item .nav-link{
+		padding: 15px;
+		margin-bottom: 15px;
+		width: 100%;
+	}
+	.help-tabs .help-nav-tabs .help-nav-item {
+	    margin: 0 0 15px !important;
+	}
+	.clients-title-area .title {
+		margin-bottom: 15px;
+	}
+	.e-book-content p {
+		font-size: 16px;
+		line-height: 1.3em;
+	}
+	footer .col-12 {
+		margin-bottom: 15px;
+	}
+}
+@media(max-width: 600px){
+	.nav-tabs .nav-item{
+		width: 100%;
+	}
+	.lead-partnership .row:nth-child(2){
+		flex-direction: column;
+	}	
+	.lead-partnership .row:nth-child(2) > div{
+		flex-basis: inherit;
+	}
+	.topbar-btn-inner  .btn {
+		padding: 10px 5px;
+	}
+	.form-outer {
+		padding: 30px;
+	}
+}

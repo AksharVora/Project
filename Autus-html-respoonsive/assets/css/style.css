@@ -1,0 +1,1516 @@
+/*----------------------------
+------------------------------
+    Theme : AUTUS
+    Version:  1.0.0
+    Author:  AUTUS
+------------------------------
+----------------------------*/
+
+/*----------------------------
+------------------------------
+
+    INDEX OF STYLING
+
+    1. Web fonts 
+    2. Base theme style
+    3. Header section style
+    4. Hero section style
+
+------------------------------
+----------------------------*/
+
+
+/*----------------------------
+Web font style start here
+----------------------------*/
+
+    @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*----------------------------
+Web font style end here
+----------------------------*/
+
+/*----------------------------
+Base theme styling start here
+----------------------------*/
+
+    html, body{
+    	font-family: 'Maven Pro', sans-serif;
+    }
+    h1,h2,h3,h4,h5,h6{
+    	box-sizing: border-box;
+    	margin: 0;
+    	padding: 0;
+    }
+    p{
+    	box-sizing: border-box;
+    	margin: 0;
+    	padding: 0;	
+    }
+    a{
+    	text-decoration: none;
+    	outline: none;
+    	border: none;
+    	font-weight: 500;
+    	-webkit-transition: color 350ms ease-in-out;
+    	-moz-transition: color 350ms ease-in-out;
+    	-ms-transition: color 350ms ease-in-out;
+    	-o-transition: color 350ms ease-in-out;
+    	transition: color 350ms ease-in-out;
+        vertical-align: baseline;
+        background: transparent;
+    }
+    a:focus,
+    a:hover{
+    	text-decoration: none;
+    	outline: none;
+    	border: none;
+    }
+    title{
+    	text-transform: capitalize;
+    }
+    ul {
+        list-style: none;
+    }
+    @media(min-width: 1530px){
+        .container{
+            max-width: 1482px;
+        }
+    }
+
+/*----------------------------
+Base theme styling start here
+----------------------------*/
+
+/*--------------------------------
+ Header section styling start here
+--------------------------------*/
+
+    .header{
+        margin: 0px;
+        padding: 0px;
+    }
+    .top-info-bar{
+        margin: 0px;
+        padding: 0px;
+        height: 53px;
+        display: flex;
+        align-items: center;
+        background: #5FB132;
+    }
+    .topinfo-leftarea{
+        margin: 0px;
+        padding: 0px;
+    }
+    .topinfo-leftarea-inner{
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+    }
+    .call-info{
+        font-family: 'Maven Pro', sans-serif;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: normal;
+        color: #fff;
+        display: inline-flex;
+        align-items: center;
+        transition: color ease-in-out 0.4s;
+        padding: 0 22px 0 0;
+        border-right: 1px solid #fff;
+    }
+    .call-info span{
+        margin: 0 12px 0 0;
+        display: flex;
+    }
+    .call-info:hover{
+        color: #fff;
+        border-right: 1px solid #fff;
+    }
+    .mail-info{
+        font-family: 'Maven Pro', sans-serif;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: normal;
+        color: #fff;
+        display: inline-flex;
+        align-items: center;
+        transition: color ease-in-out 0.4s;
+        margin: 0 0 0 26px;
+    }
+    .mail-info span{
+        margin: 0 12px 0 0;
+        display: flex;
+    }
+    .mail-info:hover{
+        color: #fff;
+    }
+    .social-media-nav{
+        margin: 0px;
+        padding: 0px;
+    }
+    .social-media-nav-items{
+        margin: 0px;
+        padding: 0px;
+    }
+    .social-media-nav-items ul{
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .social-media-nav-items ul li{
+        margin: 0 5px 0 0;
+    }
+    .social-media-nav-items ul li a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        width: 30px;
+        background: transparent;
+        border: 1px solid #fff;
+        border-radius: 100%;
+        transition: background ease 0.4s, border ease 0.4s;
+    }
+   
+    .social-media-nav-items ul li a:hover{
+        background: #fff;
+        border: 1px solid #fff;
+    }
+    .social-media-nav-items ul li a:hover svg , .social-media-nav-items ul li a:hover path{
+        fill: #5FB132 !important;
+    }
+    .social-media-nav-items ul li a:hover svg path#Fill_2 {
+        fill: #fff !important;
+    }
+    .topinfo-btn-wrapper{
+        margin: 0px;
+        padding: 0px;
+    }
+    .topbar-btn-inner{
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+    .btn{
+        padding: 10px 20px;
+        border-radius: 3px;
+        font-family: 'Maven Pro', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        
+        transition: all 0.7s ease;
+    }
+    .btn-outline-light {
+        color: #fff;
+    }
+    .btn-outline-light:hover{
+        color: #047E8A;
+        
+        border: 1px solid #fff;
+    }
+    .navigation-area{
+        margin: 0px;
+        padding: 18px 0;
+    }
+    .navigation-area .navbar{
+        padding: 0px;
+    }
+    .navigation-area .navbar-brand{
+        margin: 0px;
+        padding: 0px;
+    }
+    .navigation-area .navbar-nav{
+        margin-left:130px;
+    }
+    .navigation-area .navbar-nav .nav-link{
+        font-family: 'Maven Pro', sans-serif;
+        font-weight: medium;
+        font-size: 18px;
+        line-height: 21px;
+        color: #777777;
+        padding: 0 30px 0 0;
+        transition: color ase-in-out 0.4s;
+    }
+    .navigation-area .navbar-nav .nav-link:hover{
+        color: #5FB132;
+    }
+/*--------------------------------
+ Header section styling end here
+--------------------------------*/
+
+/*------------------------------
+ Hero Section styling start here
+------------------------------*/
+
+    .hero-slider .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .hero-slider .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    .hero-slider .swiper-pagination {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: auto !important;
+        left: auto !important;
+        margin: 0;
+    }
+    .hero-slider .swiper-pagination-bullet {
+        width: auto !important;
+        height: auto !important;
+        margin-right: 30px;
+        border-radius: 0;
+        text-align: center;
+        line-height: 30px;
+        font-size: 16px;
+        color: #fff;
+        opacity: 1;
+        background: transparent !important;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        opacity: 0.5;
+    }
+
+    .hero-slider .swiper-pagination-bullet:last-child {
+        margin-right: 0px;
+    }
+
+    .hero-slider .swiper-pagination-bullet-active {
+        color:#5FB132;
+        background: none !important;
+    }
+
+    .hero-section {
+        background: url(../images/hero-bg.png);
+        background-size: cover;
+        min-height: 900px;
+        padding: 140px 0px;
+    }
+
+    .controls-block {
+        position: absolute;
+        bottom: 30px;
+        width: 100%;
+    }
+
+    .controls-block .row {
+        margin: 0;
+    }
+
+    .arrow-area {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .arrow-area .swiper-button-prev, .arrow-area .swiper-button-next {
+        position: relative;
+        left: 0;
+        top: 0;
+        background: none;
+    }
+
+    .arrow-area .swiper-button-prev {
+        background: rgba(255, 255, 255, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70px;
+        height: 70px;
+        margin-right: 5px;
+        border-radius: 2px;
+    }
+
+    .arrow-area .swiper-button-next {
+        background: rgba(255, 255, 255, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70px;
+        height: 70px;
+        margin-left: 5px;
+        border-radius: 2px;
+    }
+
+    .arrow-area .swiper-button-prev.swiper-button-disabled, .arrow-area .swiper-button-next.swiper-button-disabled {
+        opacity: 1;
+    }
+
+    .pagination-area {
+        height: 100%;
+    }
+
+    .pagination-area .swiper-pagination {
+        position: relative;
+        text-align: right;
+        padding: 0 60px 0 0;
+    }
+
+    .hero-slider .swiper-pagination-clickable .swiper-pagination-bullet-active {
+        position: relative;
+    }
+
+    .hero-slider .swiper-pagination-clickable .swiper-pagination-bullet-active:before {
+        content: '';
+        position: absolute;
+        top: 1px;
+        right: -12px;
+        height: 3px;
+        width: 10px;
+        background: #478134;
+        transform: rotate(145deg);
+    }
+
+    .hero-slider .swiper-pagination-clickable .swiper-pagination-bullet-active:after {
+        content: '';
+        position: absolute;
+        bottom: 4px;
+        left: -12px;
+        height: 3px;
+        width: 10px;
+        background: #478134;
+        transform: rotate(145deg);
+    }
+
+    .caption-area {
+        margin: 0;
+    }
+
+    .desc-area {
+        position: absolute;
+        z-index: 1;
+        padding-right: 5%;
+    }
+
+    .img-area {
+        position: relative;
+        padding: 0;
+    }
+
+    .img-area:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(333deg, rgba(0,0,0,1) 0%, rgba(33,37,41,0) 100%);
+        height: 100%;
+        width: 100%;
+    }
+
+    .desc .title {
+        color: #fff;
+        font-family: 'Maven Pro', sans-serif;
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 60px;
+        padding-bottom: 15px;
+    }
+
+    .desc .btn-area {
+        margin-top: 25px;
+    }
+
+    .btn-gradient {
+        background: linear-gradient(
+    270deg, rgba(77,134,49,1) 0%, rgba(8,81,85,1) 50%, rgba(4,126,138,1) 100%);
+        padding: 10px 50px;
+        font-size: 20px;
+        font-family: 'Maven Pro', sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        border-radius: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: #fff;
+        border: none;
+        transition: all 0.8s linear;
+    }
+
+    .btn-gradient:hover {
+        background: linear-gradient(
+    20deg, rgba(77,134,49,1) 0%, rgba(8,81,85,1) 50%, rgba(4,126,138,1) 100%);
+        padding: 10px 50px;
+    }
+
+    
+        .swiper-slide-active .desc {
+            animation: fadeInLeft 1s;
+        }
+
+        .swiper-slide-active .slider-title {
+            animation: fadeInUp 1.5s;
+        }
+        .swiper-slide-active .img-area{
+            animation: fadeIn 1.5s;
+        }
+
+/*----------------------------
+ Hero Section styling end here
+----------------------------*/
+
+/*--------------------------------
+ Advice section styling start here
+---------------------------------*/
+    .advisors{
+        margin: 0px;
+        padding: 148px 0 115px 0;
+        background: #047E8A;
+    }
+    .advisors-section-title{
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+    .advisors-section-title-inner{
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+    .advisors-section-title-inner h2{
+        font-family: 'Maven Pro', sans-serif;
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 63px;
+        color: #ECF6F8;
+        margin: 0 0 52px 0;
+    }
+    .advisors-section-title-inner h2 span{
+        display: block;
+    }
+    .advisors-section-title-inner p{
+        font-family: 'Maven Pro', sans-serif;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 35px;
+        color: #ECF6F8;
+        margin: 0px;
+    }
+    .advisors-section-title-inner p span{
+        display: block;
+    }
+    .advisors-block-section{
+        position: relative;
+        z-index: 1;
+        margin: 50px 0 0 0;
+        padding: 0px;
+    }
+    .advisors-block-inner{
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+        z-index: 1;
+    }
+    .advisors-block-inner:after{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.4);
+    }
+    .shape-one {
+        position: absolute;
+        top: -70px;
+        right: -90px;
+        z-index: -1;
+    }
+    .shape-two{
+        position: absolute;
+        bottom: 80px;
+        left: -90px;
+        z-index: -1;
+    }
+/*--------------------------------
+ Advice section styling end here
+---------------------------------*/
+
+/*-------------------------
+ Solution section styling start 
+---------------------------*/ 
+    .solution-section{
+        margin: 0px;
+        padding: 0px;
+    }
+    .solution-leftarea{
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+    .solution-leftarea-inner{
+        margin: 0px;
+        padding: 106px 0;
+    }
+    .solution-leftarea-inner h2{
+        font-family: 'Maven Pro', sans-serif;
+        font-size: 40px;
+        line-height: 47px;
+        font-weight: bold;
+        color: #085155;
+        margin: 0 0px 25px 0;
+    }
+    .solution-leftarea-inner h2 span{
+        display: block;
+    }
+    .solution-leftarea-inner h3{
+        font-family: 'Maven Pro', sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 35px;
+        color: #085155;
+        margin: 0 0 43px 0;
+    }
+    .solution-leftarea-inner p{
+        font-family: 'Maven Pro', sans-serif;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        color: #707070;
+        margin: 0 0 35px 0;
+    }
+    .solution-leftarea p span{
+        display: block;
+    }
+   
+    .solution-rightarea{
+        margin: 0px;
+        padding: 0px;
+    }
+    .solution-rightarea-inner{
+        margin: 0px;
+        padding: 0px;
+    }
+/*-------------------------------
+ Solution section styling end here
+ -------------------------------*/
+
+/*------------------------------------
+How we work section styling start here
+------------------------------------*/
+
+    .how-we-work {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .how-navigator {
+        display: flex;    
+        width: 100%;
+        position: relative;
+        background: url(../images/navigator-bg.png) no-repeat 0 0;
+        background-size: cover;
+        padding: 55px 0;
+        z-index: 0;
+        color: #fff !important;
+    }
+    .how-navigator:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background: rgba(3, 3, 3, 0.6);
+    }
+    .z-index-1 {
+        z-index: 1;
+    }
+    .how-navigator  h3 {
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 40px;    
+    }
+    .how-navigator .nav-tabs {
+        display: flex;
+        width: calc(100% - 134px);
+        justify-content: space-between;
+        margin: 0 auto;
+        border-bottom: 4px solid #fff;
+        
+    }
+    .how-navigator .nav-tabs .nav-item .nav-link{
+        border: none;
+        color: #fff;
+        font-size: 27px;
+        font-weight: 700;
+        position: relative;
+        padding-bottom: 40px;
+
+    }
+    .how-navigator .nav-tabs .nav-item .nav-link span {
+        margin-left: 20px;
+    }
+    .how-navigator .nav-tabs .nav-item.show .nav-link, .how-navigator .nav-tabs .nav-link.active {
+        background: transparent;
+        color: #fff;
+    }
+    .how-navigator .nav-tabs .nav-link.active:after {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        height: 4px;
+        width: 100%;
+        background: #047E8A;
+        left: 0;
+
+    }
+    .how-description .img-bg-wrap{
+        max-height: 380px;
+        display: flex;
+        width: 100%;
+        object-fit: cover;
+        object-position: center 30%  ;
+
+    }
+    .how-description .no-gutters {
+        padding: 0;
+    }
+    .how-detail-area {
+        position: relative;
+        padding: 71px 111px;
+
+    }
+    .how-detail-area > * {
+        position: relative;
+        z-index: 11;
+    }
+    .how-detail-area:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -80px;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        transform: skewX(22deg);
+    }
+    .how-detail-area p {
+        color: #085155;
+        font-size: 28px;
+        font-weight: 500;
+        margin: 0 0 30px;
+    }
+    .how-detail-area a {
+        font-weight: 700;
+        font-size: 28px;
+        color: #085155;
+    }
+
+    .nav-wrap {
+        display: flex;
+        align-items: center;
+    }
+    .nav-wrap > a {
+        color: #fff;
+        font-size: 28px;
+    }
+    @media(max-width: 1530px){
+        .nav-wrap .nav-link img {
+            max-width: 45px;
+        }
+         .how-navigator .nav-tabs .nav-item .nav-link span{
+            font-size: 18px;
+         }
+         .how-navigator .nav-tabs .nav-link.active:after {
+            bottom: -6px;
+         }
+    }
+
+/*------------------------------------
+How we work section styling end here
+------------------------------------*/
+
+
+/*------------------------------------------
+ How we can help section styling start here
+------------------------------------------*/
+
+    .how-help {
+        padding: 80px 0;
+    }
+
+    .help-title .title {
+        font-family: 'Maven Pro';
+        font-size: 36px;
+        font-weight: bold;
+        line-height: 50px;
+        color: #047E8A;
+    }
+    .help-title {
+        padding-bottom: 60px;
+    }
+
+    .help-tabs {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .help-tabs .help-nav-tabs {
+        justify-content: center;
+        flex-wrap: nowrap;
+        border-bottom: 0px;
+    }
+
+    .help-tabs .help-nav-tabs .help-nav-item {
+        text-align: center;
+        margin-bottom: 0;
+        margin-right: 25px;
+        margin-left: 25px;
+        background: #fff;
+        border-radius: 20px !important;
+    }
+
+    .help-tabs .help-nav-tabs .help-nav-item .nav-link {
+        padding: 35px 130px;
+        font-size: 20px;
+        color: #085155;
+        width: 100%;
+        box-shadow: 0px 3px 6px rgb(0 0 0 / 16%);
+        border: none !important;
+        border-radius: 5px;
+        font-family: 'Maven Pro';
+        font-weight: 500;
+    }
+
+    .help-tabs .help-nav-tabs .help-nav-item:first-child {
+        margin-left: 0;
+    }
+
+    .help-tabs .help-nav-tabs .help-nav-item:last-child {
+        margin-right: 0;
+    }
+
+    .help-tabs .help-nav-tabs .help-nav-item .nav-link.active {
+        background: #047E8A;
+        color: #fff;
+    }
+
+    .help-desc-content .title {
+        line-height: 46px;
+        text-align: left;
+        font-family: 'Maven Pro';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        color: #085155;
+        margin-bottom: 25px;
+    }
+
+
+    .help-desc-content .sub-title {
+        line-height: 35px;
+        width: 65%;
+        text-align: left;
+        font-family: 'Maven Pro';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        color: #085155;
+        margin-bottom: 25px;
+    }
+
+    .help-desc-content .description {
+        font-family: 'Maven Pro';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        color: rgba(112,112,112,1);
+        margin-bottom: 25px;
+    }
+
+    .help-desc-content .help-tabs-listing {
+        padding: 10px 0 35px 0;
+        margin-bottom: 0;
+    }
+
+    .help-desc-content .help-tabs-listing li {
+        position: relative;
+        font-family: 'Maven Pro';
+        font-weight: normal;
+        font-size: 18px;
+        color: rgba(112,112,112,1);
+        margin-bottom: 10px;
+        padding-left: 25px;
+    }
+
+    .help-desc-content .help-tabs-listing li:before {
+        content: '';
+        position: absolute;
+        top: 6px;
+        left: 0;
+        background: url(../images/ic_arrow.png);
+        background-size: cover;
+        height: 15px;
+        width: 13px;
+    }
+
+    .help-tabs-content-area {
+        padding: 125px 0 50px 0;
+    }
+
+    .btn-learn {
+        background: linear-gradient(
+    270deg, rgba(77,134,49,1) 0%, rgba(8,81,85,1) 50%, rgba(4,126,138,1) 100%);
+        padding: 10px 50px;
+        font-size: 20px;
+        font-family: var(--main-font);
+        font-weight: 600;
+        text-transform: uppercase;
+        border-radius: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: #fff;
+        border: none;
+    }
+
+    .btn-learn:hover {
+        background: rgb(77,134,49);
+    }
+
+/*------------------------------------------
+ How we can help section styling end here
+------------------------------------------*/
+
+
+/*------------------------------------------
+ Client testimonial section styling start here
+------------------------------------------*/
+
+    .clients-testimonial {
+        padding: 150px 0px;
+        background: url(../images/bg-our-clients.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+    .client-item {
+        flex-direction: column;
+    }
+    .clients-title-area .title {
+        font-family: 'Maven Pro';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 50px;
+        color: rgba(8,81,85,1);
+        margin-bottom: 70px;
+    }
+
+    .client-slider-inner {
+        background: #A5B7CD;
+        padding: 50px;
+        border-radius: 20px;    
+        position: relative;
+    }
+    .client-slider-inner:after {
+        position: absolute;
+        bottom: -39px;
+        content: "";
+        height: 50px;
+        left: 0;
+        width: 100%;
+        background: url(../images/bottom.png) no-repeat center bottom;
+    }
+    .client-slider-inner p{
+        font-size: 22px;
+        color: #fff;
+        font-weight: 400;
+        text-align: left;
+        margin-bottom: 20px;
+        line-height: 30px;
+    }
+    .author-slider {
+        display: flex;
+        width: 100%;
+        padding-top: 40px;
+        justify-content: flex-end;
+        padding-bottom: 40px;
+    }
+    .author-image {
+        display: flex;
+        width: 84px;
+        height: 84px;
+        background: #B7B7B7;
+        border-radius: 100%;
+    }
+    .author-content {
+        text-align: left;
+        padding-left: 25px; 
+    }
+    .author-content h6{
+        font-size: 22px;
+        color: #085155;
+    }
+    .author-content span{
+        color: #858687;
+        font-size: 16px;
+    }
+
+    .clients-testimonial .swiper-pagination {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        bottom: -30px;
+    }
+
+    .clients-testimonial .swiper-pagination-bullet {
+        width: 21px;
+        height: 21px;
+        border: 2px solid rgba(57, 61, 114, 0.4);
+        border-radius: 100%; 
+        margin-right: 11px;
+        background: transparent;
+        opacity: 1;
+
+    }
+    .clients-testimonial .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background: #047E8A;
+        border-color: transparent;
+    }
+
+    .client-post-content {
+        padding-top: 82px;
+    }
+    .client-post-content .btn {
+        margin-top: 50px;
+    }
+
+/*------------------------------------------
+ Client testimonial section styling end here
+------------------------------------------*/
+
+/*-------------------------------------
+ Get in touch section styling start here
+--------------------------------------*/
+
+    .get-in-touch {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        background: url(../images/form-bg.png) no-repeat 0 0;
+        background-size: cover;
+        position: relative;
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .get-in-touch:after {
+        background: rgba(30, 27, 51, 0.35);    
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        width: 100%;
+        height: 100%;
+    }
+
+    .form-outer {
+        background: rgba(4, 126, 138, 0.9);
+        padding: 60px 54px 74px 54px;
+    }
+
+    .form-outer {
+        position: relative;
+        z-index: 11;
+    }
+    .form-outer h3 {
+        color: #fff;
+        font-size: 42px;
+        font-weight: 400;
+        line-height: 56px;
+        margin-bottom: 10px;
+    }
+    .form-outer p {
+        font-size: 18px;
+        color: #fff;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+    .form-outer  .row {
+        margin-left: -7.7px;
+        margin-right: -7.7px;
+    }
+
+    .form-outer .form-group.col-12 {
+        padding-left: 7.7px;   
+        padding-right: 7.7px;   
+    }
+    .form-outer .form-group .form-control {
+        height: 54px;
+        padding-top: 0;
+        padding-bottom: 0;
+        align-items: center;
+        display: flex;
+        width: 100%;
+        border-radius: 3px;
+        border: none;
+    }
+    .form-outer .form-group textarea.form-control  {
+        min-height: 81px;
+        resize: none;
+        padding: 15px ;
+    }
+    .btn-white {
+        color: #047E8A;
+        font-weight: 700;
+        font-size: 18px;
+        letter-spacing: 0.073em;
+        padding-left: 43px;
+        padding-right: 43px;
+    }
+
+/*-------------------------------------
+ Get in touch section styling end here
+--------------------------------------*/
+
+
+/*-------------------------------------
+ Resources Hub section styling start here
+--------------------------------------*/
+
+    .resources-hub {
+        display: flex;
+        width: 100%;
+        padding: 150px 0 100px;
+
+    }
+    .hub-title {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 74px;
+    }
+     .hub-title  h3 {
+        font-size: 50px;
+        color: #085155;
+        font-weight: 700;
+        margin: 0 0 23px 0;
+     }
+     .hub-title a {
+        font-size: 18px;
+        color: #085155;
+        font-weight: 400;
+     }
+     .resource-image {
+        margin-bottom: 26px;
+     }
+     .resource-detail {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+     }
+     .resource-detail .post-date{
+        color: #707070;
+        font-size: 14px;
+        margin-bottom: 10px;
+        display: block;
+     }
+     .resource-detail .post-title {
+        font-size: 23px;
+        line-height: 1.5em; 
+        color: #085155;
+        font-weight: 300;
+        margin-bottom: 26px;
+     }
+     .resource-detail .tag {
+        color: #707070;
+        font-size: 14px;
+        margin-bottom: 10px;
+        display: block;  
+        margin-top: 26px;
+     }
+     .resource-detail .tag a {
+        color: #085155;
+        text-decoration: underline;
+     }
+
+/*-------------------------------------
+ Resources Hub section styling end here
+--------------------------------------*/
+
+
+/*--------------------------------
+ E-book section styling start here
+--------------------------------*/
+
+    .e-book {
+        display: flex;
+        width: 100%;
+        padding: 100px 0;
+
+    }
+    .e-book-content h4 {
+        font-size: 50px;
+        font-weight: 700;
+        color: #085155;
+        margin: 0 0 28px;
+    }
+    .e-book-content  p{
+        color: #707070;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 36px;
+        margin: 0 0 45px;
+    }
+
+/*--------------------------------
+ E-book section styling end here
+--------------------------------*/
+
+/*------------------------------------
+ Newsletter section styling start here
+------------------------------------*/
+
+    .newsletter-section {
+        display: flex;
+        width: 100%;
+        padding: 100px 0;
+        background: #5FB132;
+    }
+
+    .newsletter-content h4{
+        color: #fff;
+        font-size: 36px;
+        line-height: 48px;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+
+    .newsletter-content p {
+        font-size: 20px;
+        line-height: 36px;
+        color: #fff;
+    }
+
+    .form-element {
+        display: flex;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 7px;
+        padding: 17px;
+        position: relative;
+    }
+
+    .form-element input {
+        width: 100%;
+        display: flex;
+        height: 80px;
+        background: #fff;
+        border: none;
+        border-radius: 7px;
+        padding: 0 30px ;
+        outline: none;
+
+
+    }
+    .form-element .arrow-btn {
+        position: absolute;
+        right: 23px;
+        top: 23px;
+        height: 68px;
+        width: 84px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        background: #5FB132;
+    }
+
+    .newsletter-form p {
+        color: #fff;
+        font-size: 16px;
+        margin-top: 15px;
+    }
+    .newsletter-form p  a {
+        font-weight: 700;
+        color: #fff;
+    }
+/*------------------------------------
+ Newsletter section styling end here
+------------------------------------*/
+
+
+/*------------------------------------
+ Footer section styling start here
+------------------------------------*/
+
+    footer.footer {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        background: #085155;
+        color: #fff;
+        padding: 190px 0 65px;
+    }
+
+    .footer-info-box p {
+        margin-top: 30px;
+        font-size: 14px;
+        line-height: 20px;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+    .footer-info-box h4 {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 24px;
+    }
+    .footer-info-box ul {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: flex-start;
+        list-style: none;
+
+        padding: 0;
+        margin: 0;
+    }
+    .footer-info-box ul li a {
+        display: flex;
+        width: 55px;
+        height: 55px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #5FB132;
+        color: #5FB132;
+        font-size: 26px;
+        border-radius: 50%;
+        margin-right: 8px;
+    }
+
+    .footer-navigation {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .footer-navigation h4 {
+        font-size: 18px;
+        color: #fff;
+        font-weight: 700;
+        margin-bottom: 43px;
+    }
+    .footer-navigation ul{
+        list-style: none;
+        display: flex;
+        width: 100%;
+        position: relative;
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+    }
+    .footer-navigation ul li  a {
+        padding-left: 22px;
+        background: url(../images/footer-bullet.png) no-repeat left center;
+        color: #fff;
+        font-size: 14px;
+        margin-bottom: 28px;
+        display: block;
+    }
+
+    .contact-info > div {
+        display: flex;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .contact-info a , .contact-info p {
+        color: #fff;
+        font-size: 14px;
+    }
+
+    .icon-area{ 
+    width: 30px;
+    margin-right: 10px;
+     }
+
+     .copyrights {
+        border-top: 1px solid #5FB132;
+        margin-top: 95px;
+        padding-top: 35px;
+     }
+     .copyrights p {
+        margin: 0;
+        color: #fff;
+        text-align: center;
+     }
+     
+ /*------------------------------------
+ Footer section styling end here
+------------------------------------*/
+
+    /*-------------------------
+    ---------------------------
+    about us page styling start
+    ---------------------------
+    -------------------------*/
+
+/*------------------------------------
+ Inner hero section styling start here
+------------------------------------*/
+
+    .inner-hero {
+        position: relative;
+        overflow: hidden;
+        height: 554px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .img-cover{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .overlay:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(3,3,3,.6);
+    }
+
+    h1.page-title {
+        color: #fff;
+    }
+
+/*------------------------------------
+ Inner hero section styling end here
+------------------------------------*/
+
+/*----------------------------------------
+ About discover section styling start here
+----------------------------------------*/
+
+    .about-discover{
+        background: #047E8A;
+        padding-top: 195px;
+        padding-bottom: 310px;
+    }
+    .about-discover-content h2 {
+        color: #fff;
+        font-size: 50px;
+        line-height: 67px;
+
+    }
+    .discover-q-msg p{
+        font-size: 22px;
+        color: #fff;
+        line-height: 35px;
+    }
+
+
+/*----------------------------------------
+ About discover section styling end here
+----------------------------------------*/
+
+/*----------------------------------------
+ About video section styling start here
+----------------------------------------*/
+
+    .video-wrapper {
+        display: flex;
+        width: 100%;
+        position: relative;
+        margin-top: -160px;
+    }
+    .video-wrapper .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .video-wrapper .overlay:after {
+        background: rgba(139, 137, 152, 0.4);
+        z-index: 11;
+    }
+    .video-wrapper .overlay a {
+        position: relative;
+        z-index: 111;
+    }
+    .video-wrapper img {
+        position: relative;
+        z-index: 1;
+    }
+    .video-wrapper .shape-one {
+        z-index: 1;
+    }
+    .video-wrapper .shape-two {
+        position: absolute;
+        bottom: unset;
+        left: -90px;
+        z-index: 1;
+        top: 30px;
+    }
+
+/*----------------------------------------
+ About video section styling end here
+----------------------------------------*/
+
+.our-core-values {
+    padding: 170px  0 135px;
+}
+
+.section-title h3 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #085155;
+}
+
+
+.feat-box {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.feat-icon {
+    display: flex;
+    width: 74px;
+    height: 74px;
+    background: rgba(4, 126, 138, 0.06);
+    border-radius: 16px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+.feat-content h5 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #183B56;
+    margin-bottom: 21px;
+}
+.feat-content p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #5A7184;
+    margin: 0;
+}
