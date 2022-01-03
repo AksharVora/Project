@@ -472,14 +472,14 @@ Base theme styling start here
 
     
         .swiper-slide-active .desc {
-            animation: fadeInLeft 1s;
+            animation: fadeInLeft 2s;
         }
 
         .swiper-slide-active .slider-title {
-            animation: fadeInUp 1.5s;
+            animation: fadeInUp 4.5s;
         }
         .swiper-slide-active .img-area{
-            animation: fadeIn 1.5s;
+            animation: fadeIn 4.5s;
         }
 
 /*----------------------------
@@ -493,6 +493,11 @@ Base theme styling start here
         margin: 0px;
         padding: 148px 0 115px 0;
         background: #047E8A;
+    }
+
+    .divider-top-full {
+        top: 0;
+        left: 0;
     }
     .advisors-section-title{
         margin: 0px;
@@ -538,15 +543,7 @@ Base theme styling start here
         position: relative;
         z-index: 1;
     }
-    .advisors-block-inner:after{
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        background: rgba(0, 0, 0, 0.4);
-    }
+    
     .shape-one {
         position: absolute;
         top: -70px;
@@ -558,6 +555,12 @@ Base theme styling start here
         bottom: 80px;
         left: -90px;
         z-index: -1;
+    }
+    .advisors-section-title{
+        padding: 0 15px;
+    }
+    @media(max-width: 767px){
+
     }
 /*--------------------------------
  Advice section styling end here
@@ -712,15 +715,29 @@ How we work section styling start here
         position: relative;
         z-index: 11;
     }
-    .how-detail-area:after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: -80px;
-        width: 100%;
-        height: 100%;
-        background: #fff;
-        transform: skewX(22deg);
+
+    
+    @media(min-width: 980px){
+        .how-detail-area:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: url(../images/corner-shape-copy.png) no-repeat 0 0;
+        }
+    }
+    @media(min-width: 1560px){
+        .how-detail-area:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -40%;
+            width: 100%;
+            height: 100%;
+            background: url(../images/corner-shape-copy.png) no-repeat 0 0;
+        }
     }
     .how-detail-area p {
         color: #085155;
@@ -1130,6 +1147,26 @@ How we work section styling end here
         color: #085155;
         font-weight: 400;
      }
+
+     .blog-detail-title h3 {
+        font-size: 50px;
+        color: #085155;
+        font-weight: 700;
+        margin: 0 0 23px 0;
+     }
+     .blog-detail-title p{
+        font-size: 18px;
+        max-width: 300px;
+        margin-bottom: 30px;
+
+     }
+     .resource-box {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 40px 5px rgb(0 0 0 / 10%);
+}
+
      .resource-image {
         margin-bottom: 26px;
      }
@@ -1137,6 +1174,7 @@ How we work section styling end here
         display: flex;
         width: 100%;
         flex-direction: column;
+        padding: 15px;
      }
      .resource-detail .post-date{
         color: #707070;

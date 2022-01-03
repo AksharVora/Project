@@ -8,14 +8,25 @@ $(document).ready(function(){
 
 });
 $(window).on("load" , function(){
-
+	if($(window).width() < 980){
+		$('.nav-wrap .nav-tabs li').hide();
+		$('.nav-wrap .nav-tabs  .active').parents("li").show();
+	}
 	$('body').on("click" , ".next-step" , function(){
 	$('.nav-wrap .nav-tabs  .active').parents('li').next('li').find('a').trigger('click');
-	
+	if($(window).width() < 980){
+		$('.nav-wrap .nav-tabs li').hide();
+		$('.nav-wrap .nav-tabs  .active').parents("li").show();
+	}
 	});
+
 
 	$('body').on("click" , ".prev-step" , function(){
 	$('.nav-wrap .nav-tabs  .active').parents('li').prev('li').find('a').trigger('click');
+	if($(window).width() < 980){
+		$('.nav-wrap .nav-tabs li').hide();
+		$('.nav-wrap .nav-tabs  .active').parents("li").show();
+	}
 	});
 })
 
@@ -27,7 +38,11 @@ function mainSliderfunction(){
 	var mySwiper = new Swiper ('.hero-slider', 
 		
 	{
-			
+			loop: true,
+			autoplay: {
+			  delay: 5000,
+			},
+
 	    pagination: {
 	      el: '.hero-slider .swiper-pagination',
 				clickable: true,

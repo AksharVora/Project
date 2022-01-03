@@ -191,7 +191,10 @@
 		margin-bottom: 30px;
 	}
 	.advisors-section-title{
-		flex-direction: column;
+		padding: 0 15px;
+	}
+	.advisors-section-title iframe {
+		max-height: 300px;
 	}
 	.solution-leftarea-inner h3{
 		font-size: 20px;
@@ -201,6 +204,13 @@
 		font-size: 14px;
 		line-height: 1.3em;
 		margin-bottom: 15px;
+	}
+	.how-navigator .nav-tabs {
+		width: calc(100% - 94px);
+	}
+	.nav-tabs .nav-item {
+		width: 100%;
+		text-align: center;
 	}
 	.how-navigator .nav-tabs{
 		border: none;

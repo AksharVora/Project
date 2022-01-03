@@ -1,0 +1,204 @@
+/*----------------------------
+------------------------------
+    Theme : PURPLE MOON DESIGNS
+    Version:  1.0.0
+    Author:  PURPLE MOON DESIGNS
+------------------------------
+----------------------------*/
+
+/*----------------------------
+------------------------------
+
+    INDEX OF STYLING
+
+    1. Web fonts 
+    2. Base theme style
+    3. Header section style
+   
+------------------------------
+----------------------------*/
+
+
+/*----------------------------
+Web font style start here
+----------------------------*/
+
+    @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&display=swap');
+
+/*----------------------------
+Web font style end here
+----------------------------*/
+
+/*----------------------------
+Base theme styling start here
+----------------------------*/
+
+    html, body{
+    	font-family: 'Lexend', sans-serif;
+    }
+    h1,h2,h3,h4,h5,h6{
+    	box-sizing: border-box;
+    	margin: 0;
+    	padding: 0;
+    }
+    p{
+    	box-sizing: border-box;
+    	margin: 0;
+    	padding: 0;	
+    }
+    a{
+    	text-decoration: none;
+    	outline: none;
+    	border: none;
+    	font-weight: 500;
+    	-webkit-transition: color 350ms ease-in-out;
+    	-moz-transition: color 350ms ease-in-out;
+    	-ms-transition: color 350ms ease-in-out;
+    	-o-transition: color 350ms ease-in-out;
+    	transition: color 350ms ease-in-out;
+        vertical-align: baseline;
+        background: transparent;
+    }
+    a:focus,
+    a:hover{
+    	text-decoration: none;
+    	outline: none;
+    	border: none;
+    }
+    title{
+    	text-transform: capitalize;
+    }
+    ul {
+        list-style: none;
+    }
+    
+
+/*----------------------------
+Base theme styling start here
+----------------------------*/
+
+/*--------------------------------
+ Header section styling start here
+--------------------------------*/
+    header .container-fluid {
+        max-width: 1730px;
+    }
+
+    .btn-primary , .btn-primary:hover , .btn-primary:focus  {
+        background: #401C64;
+        border: none;
+        border-radius: 5px;
+    }
+    header .btn-primary , header .btn-primary:hover {
+        padding: 24px 45px !important;
+    }
+    header .btn-primary svg {
+        margin-left: 27px;
+    }
+    .navbar {
+        padding: 24px 0;
+    }
+   .navbar-light .navbar-nav .nav-link {
+        font-size: 24px;
+        font-weight: 300;
+        color: #5C2C7F;
+        margin-right: 52px;
+    }
+/*--------------------------------
+ Header section styling end here
+--------------------------------*/
+
+
+
+/*--------------------------------
+ Hero CTA section styling start here
+--------------------------------*/
+
+.hero-cta {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 156px 0 150px;
+}
+@media(min-width: 1600px){
+    .hero-cta {
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+}
+.hero-cta h1 {
+    font-size: 70px;
+    line-height: 95px;
+    color: #5C2C7F;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+.hero-cta p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #707070;
+    line-height: 42px;
+}
+
+.round {
+    border-radius: 50% !important;
+    width: 235px;
+    height: 235px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    text-align: left;
+
+}
+
+/*--------------------------------
+ Hero CTA section styling end here
+--------------------------------*/
+
+/*-----------------------------------
+ Services section styling start here
+-----------------------------------*/
+.services-section {
+    padding-bottom: 175px;
+    overflow: hidden;
+}
+.service-box {
+   border-radius: 5px;
+   overflow: hidden; 
+}
+.service-box img {
+    max-width: 100%;
+}
+.over-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(79, 79, 79, 0.4);
+    display: flex;
+    align-items: flex-end;
+    padding: 35px;
+}
+.over-content span {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+}
+.services-slider .swiper-button-next {
+    right:23% ;
+    background: none !important;
+    height: 80px;
+    width: 80px;
+}
+.services-slider .swiper-button-prev {
+    left: 23%;
+    background: none !important;
+    height: 80px;
+    width: 80px;
+}
+/*-----------------------------------
+ Services section styling end here
+-----------------------------------*/
