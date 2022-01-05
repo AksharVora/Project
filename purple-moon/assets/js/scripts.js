@@ -19,6 +19,24 @@ function serviceSlider(){
           nextEl: ".services-slider .swiper-button-next",
           prevEl: ".services-slider .swiper-button-prev",
         },
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 20
+          },
+          // when window width is >= 480px
+          768: {
+            slidesPerView: 1.5,
+            spaceBetween: 30,
+            autoplay:true
+          },
+          // when window width is >= 640px
+          980: {
+            slidesPerView: 2,
+            spaceBetween: 40
+          }
+        }
       });
 }
 
