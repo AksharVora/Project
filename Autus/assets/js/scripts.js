@@ -1,6 +1,5 @@
 $(document).ready(function(){
-
-  
+	marketingSlider();
   mainSliderfunction();
 	testimonialSlider();
 	cultureSlider();
@@ -152,4 +151,16 @@ function testimonialSliderv2(){
         },
       }
 	 });
+}
+function marketingSlider(){
+	var swiper = new Swiper(".marketSwiper", {
+		autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".marketSwiper .swiper-pagination",
+           clickable: true,
+        },
+      });
 }
