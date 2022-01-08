@@ -246,6 +246,67 @@
 	.why-title p {
 		font-size: 18px;
 	}
+	.btn-full-jambo {
+		width: 100%;
+		font-size: 18px;
+	}
+	.benifit-content {
+		width: 100%;
+	}
+	.over-content-area h1 {
+		font-size: 28px;
+	}
+	.over-content-area h2 {
+		font-size: 24px;
+	}
+	.marketing-slider .swiper-slide{
+		height: 100vh;
+	}
+	.marketing-slider .swiper-slide div > img {
+		height: 100% !important;
+		object-fit: cover;
+	}
+	.marketing-slider .swiper-slide div {
+		height: 100%;
+	}
+	 .marketing-slider .swiper-container-horizontal>.swiper-pagination-bullets {
+	 	right: 20px;
+	 }
+	 .why-choose-content h3 {
+	 	margin-top: 30px;
+	 	margin-bottom: 15px;
+	 }
+	 .why-choose-content h3 , .helping-content-title h3 , .benifit-title h3 ,.auto-pilot h3 , .packages-section .section-title h4 , .project-section .section-title h4{
+	 	font-size: 28px;
+	 }
+	 .why-choose-content > p , .helping-content-title p , .packages-section .section-title p , .project-section .section-title p{
+	 	font-size: 16px;
+	 }
+	 .quote-texted p {
+	 	font-size: 16px;
+	 }
+	 .why-choose-us , .benifit-section , .auto-pilot , .packages-section , .project-section{
+	 	padding: 50px 0;
+	 }
+	 .helping-content-title p  , .auto-pilot h3 {
+	 	margin-bottom: 15px;
+	 }
+	 .helping-list ul li , .auto-pilot p{
+	 	font-size: 16px;
+	 }
+	 .benifit-section img{
+	 	margin: auto;
+	 	display: block;
+	 }
+	 .benifit-content h5 {
+	 	font-size: 24px;
+	 	text-align: center;
+	 	margin: 15px 0;
+
+	 }
+	 .package-box {
+	 	margin-bottom: 30px;
+	 }
 }
 @media(max-width: 600px){
 	.nav-tabs .nav-item{
@@ -270,5 +331,30 @@
 	.video-wrapper a svg {
 		height: 40px;
 		width: 40px;
+	}
+	.project-box {
+		flex-direction: column;
+		height: auto !important;
+	}
+	.project-detail , .project-action{
+		flex: 0 0 100%;
+		max-width: 100%;
+		height: auto !important;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+	.project-action .price {
+		margin-bottom: 15px;
+	}
+	.faq-section .card {
+		padding: 15px;
+	}
+	.faq-section .card .card-header .btn {
+		padding-left: 0;
+		padding-right: 35px;
+	}
+	.faq-section .card .card-header .btn.collapsed:after {
+		right: 0;
+		top: 15px;
 	}
 }

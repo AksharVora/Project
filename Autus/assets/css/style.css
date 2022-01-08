@@ -2092,6 +2092,9 @@ autopilot section styling start here
     .illustration-object {
         margin-top: 50px;
     }
+    .illustration-object svg {
+        max-width: 100%;
+    }
 /*--------------------------------
 autopilot section styling end here
 --------------------------------*/
@@ -2303,3 +2306,77 @@ partner ship section styling start here
 /*-------------------------------------
 partner ship section styling start here
 -------------------------------------*/
+
+/*----------------------------
+faq section styling start here
+------------------------------*/
+    .faq-section {
+        padding: 100px 0 0;
+    }
+    .faq-section .section-title h4 {
+        font-size: 42px;
+        font-weight: 500;
+        color: #085155;
+    }
+
+    .faq-section  .card{
+        background: #fff;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        border: none;
+        padding: 30px 40px;
+        margin-bottom: 30px;
+    }
+    .faq-section  .card .card-header {
+        border: none;
+    }
+    .faq-section  .card .card-body{
+        border-top: 1px solid #D8D8D8;
+        margin-top: 20px;
+        color: #6D7783;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .faq-section  .card .card-body .btn-gradient2{
+        font-size: 12px;
+        height: 40px;
+        margin-top: 30px;
+        width: 120px;
+    }
+    .faq-section  .card .card-body .btn-gradient2 svg {
+        width: 15px;
+        height: 10px;
+    }
+    .faq-section  .card .card-header .btn {
+        color: #047E8A;
+        font-size: 20px;
+        font-weight: 700;
+        white-space: inherit;
+        position: relative;
+        text-decoration: none !important;
+
+    }
+    .faq-section  .card .card-header .btn:after { 
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        align-items: center;
+        background: url(../images/down-aarow.svg) no-repeat center center;
+        content: "";
+        height: 20px;
+        width: 20px;
+        transform: rotate(-90deg);
+    }
+    .faq-section  .card .card-header .btn.collapsed:after { 
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        align-items: center;
+        background: url(../images/down-aarow.svg) no-repeat center center;
+        content: "";
+        height: 20px;
+        width: 20px;
+        transform: rotate(90deg);
+    }
+/*----------------------------
+faq section styling end here
+------------------------------*/
