@@ -2380,3 +2380,88 @@ faq section styling start here
 /*----------------------------
 faq section styling end here
 ------------------------------*/
+
+
+/*-----------------------------------
+-------------------------------------
+Marketing services page style start
+-------------------------------------
+-----------------------------------*/
+
+/*----------------------------
+Hero section styling start here
+------------------------------*/
+    
+    .inner-hero.m-s {
+        min-height: 936px;
+    }
+
+    .inner-hero.m-s h1.page-title { 
+        font-size: 72px;
+
+    }
+
+
+
+/*----------------------------
+Hero section styling end here
+------------------------------*/
+/*------------------------------------------
+Helping business section styling start here
+------------------------------------------*/
+    .helping-business {
+        padding-top: 169px;
+        background: linear-gradient(rgba(191, 209, 235, 0.7) 0%, rgba(205, 220, 238, 0.76) 10.8%, rgba(223, 234, 243, 0.84) 27.09%, rgba(234, 242, 246, 0.88) 40.97%, rgba(238, 246, 248, 0.9) 50.68%, rgba(234, 242, 244, 0.89) 63.38%, rgba(222, 231, 233, 0.85) 80.27%, rgba(204, 213, 215, 0.8) 99.45%, rgba(204, 213, 215, 0.8) 100%);
+         
+    }
+    .helping-business .section-title {
+        margin-bottom: 130px;
+    }
+    .helping-business .section-title h4 {
+        font-weight: 500;
+        font-size: 60px;
+        line-height: 77px;
+        text-align: center;
+        color: #085155;
+    }
+    .grow-box {
+        background: #fff;
+        border: 1px solid #f2f2f2;
+        box-shadow: 0px 10px 20px rgb(69 158 255 / 10%);
+        padding: 0 54px;
+        margin-bottom: 43px;
+        min-height: 599px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .grow-icon{
+        margin-bottom: 37px;
+    }
+    .grow-content {
+    display: flex;
+    flex-direction: column;
+    min-height: 280px;
+}
+    .grow-content h3{
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 48px;
+        text-align: left;
+        color: #233d63;
+        margin-bottom: 19px;
+    }
+    .grow-content p{
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 28px;
+        text-align: left;
+        color: #6d7783;
+        
+    }
+    .grow-content  a {
+        margin-top: auto;
+    }
+/*------------------------------------------
+Helping business section styling end here
+------------------------------------------*/

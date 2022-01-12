@@ -307,6 +307,29 @@
 	 .package-box {
 	 	margin-bottom: 30px;
 	 }
+	 .inner-hero.m-s h1.page-title {
+	    font-size: 40px;
+	} 
+	.grow-box {
+		padding: 0 30px ;
+	}
+	.grow-content h3 {
+		font-size: 26px;
+	}
+	.grow-content p {
+		font-size: 16px;
+		margin-bottom: 30px;
+	}
+	.helping-business {
+		padding-top: 50px;
+	}
+	.helping-business  .section-title {
+		margin-bottom: 50px;
+	}
+	.inner-hero.m-s {
+		height: 100vh;
+		min-height: unset;
+	}
 }
 @media(max-width: 600px){
 	.nav-tabs .nav-item{
