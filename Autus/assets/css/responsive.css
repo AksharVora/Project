@@ -330,6 +330,18 @@
 		height: 100vh;
 		min-height: unset;
 	}
+	.growth-content {
+		margin-top:30px ;
+	} 
+	.growth-img-box  {
+		padding: 0 30px;
+	}
+	.growth-img-box  img{
+		max-width: 100%;
+	}
+	.growth-content h3 {
+		font-size: 28px;
+	}
 }
 @media(max-width: 600px){
 	.nav-tabs .nav-item{

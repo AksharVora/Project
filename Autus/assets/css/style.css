@@ -2465,3 +2465,55 @@ Helping business section styling start here
 /*------------------------------------------
 Helping business section styling end here
 ------------------------------------------*/
+
+
+/*-----------------------------------
+-------------------------------------
+growth platform page style start
+-------------------------------------
+-----------------------------------*/
+ .growth-section {
+    padding: 200px 0 0;
+    background: linear-gradient(rgba(191, 209, 235, 0.7) 0%, rgba(205, 220, 238, 0.76) 10.8%, rgba(223, 234, 243, 0.84) 27.09%, rgba(234, 242, 246, 0.88) 40.97%, rgba(238, 246, 248, 0.9) 50.68%, rgba(234, 242, 244, 0.89) 63.38%, rgba(222, 231, 233, 0.85) 80.27%, rgba(204, 213, 215, 0.8) 99.45%, rgba(204, 213, 215, 0.8) 100%);
+ }
+.growth-img-box {
+    min-height: 475px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 30px 30px 60px rgba(0, 0, 0, 0.3);
+
+}
+
+.growth-content {
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.growth-content h3 {
+     font-weight: normal;
+    font-size: 48px;
+    letter-spacing: -0.02em;
+    line-height: 62px;
+    text-align: center;
+    color: #047e8a;   
+}
+
+.growth-content p {
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: -0.03em;
+    line-height: 21px;
+    text-align: center;
+    color: #595f6f;
+    margin: 15px 0;
+}
+.growth-img-box.blue  {
+    background: #1756ec;
+}
+
+.growth-img-box.green  {
+    background: #072B0D;
+}
