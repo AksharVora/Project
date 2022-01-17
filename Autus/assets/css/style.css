@@ -468,17 +468,17 @@ Base theme styling start here
         padding: 10px 50px;
     }
 
-    
+    /*
         .swiper-slide-active .desc {
             animation: fadeInLeft 2s;
         }
 
         .swiper-slide-active .slider-title {
-            animation: fadeInUp 4.5s;
+            animation: fadeInUp 7.5s;
         }
         .swiper-slide-active .img-area{
             animation: fadeIn 4.5s;
-        }
+        }*/
 
 /*----------------------------
  Hero Section styling end here
@@ -1888,7 +1888,10 @@ Marketing hero slider section styling start here
     .marketing-slider {
         overflow: hidden;
         position: relative;
-        height: 100vh;
+        height: 80vh;
+    }
+    .slider_inner , .marketSwiper {
+        height: 100%;
     }
     .over-content-area {
         top: 0;
@@ -1964,17 +1967,10 @@ Why choose us section styling start here
 
     .quote-texted {
         padding: 45px;
-        border-left: 2.5px solid #A5B7CD;
+        
         position: relative;
     }
-    .quote-texted:before {
-        position: absolute;
-        left: -3px;
-        width: 5px;
-        height: 60px;
-        background: #085155;
-        content: "";
-    }
+    
     .quote-texted h5 {
         font-size: 32px;
         font-weight: 700;
@@ -2022,6 +2018,60 @@ Why choose us section styling start here
         font-weight: 500;
         margin-bottom: 15px;
     }
+    .quote-texted {
+        height: 500px;
+        overflow-y:scroll ;
+    }
+        #style-4 {
+          position: relative;
+        }
+
+        .ssb_sb {
+            background-color: #085155;
+            cursor: pointer;
+            position: absolute;
+            left: 0px;
+            border-radius: 0;
+            width: 5px !important;
+        }
+        /*.ssb_sb_down {
+          background-color: #1199aa;
+        }
+
+        .ssb_sb_over {
+          background-color: #33bbcc;
+        }*/
+
+        .ssb_st {
+          background-color: #a5b7cd;
+          cursor:pointer;
+          height:100%;
+          position:absolute;
+          left:1.5px;
+          top:0;
+          width: 2.5px !important;
+          border-radius: 0px;
+        }
+
+        
+        #style-4::-webkit-scrollbar-track
+        {
+            position: absolute;
+            float: left;
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            background-color: #F5F5F5;
+            visibility: hidden;
+        }
+
+        #style-4::-webkit-scrollbar
+        {
+          visibility: hidden;
+        }
+
+        #style-4::-webkit-scrollbar-thumb
+        {
+            visibility: hidden;
+        }
 /*---------------------------------------------
 Why choose us section styling end here
 ---------------------------------------------*/
@@ -2393,7 +2443,7 @@ Hero section styling start here
 ------------------------------*/
     
     .inner-hero.m-s {
-        min-height: 936px;
+        min-height: 80vh;
     }
 
     .inner-hero.m-s h1.page-title { 
@@ -2516,4 +2566,137 @@ growth platform page style start
 
 .growth-img-box.green  {
     background: #072B0D;
+}
+
+.element-item  {
+    width: 33.33%;
+   height: 450px;
+    overflow: hidden;
+}
+.element-item  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.element-item .btn-gradient2 {
+    background: #fff;
+    color: #047E8A !important;
+    margin-top: auto;
+}
+.element-item h3 {
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.overcontent-area {
+    position: absolute;   
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(41, 41, 41, 0.8) 0%, rgba(41, 41, 41, 0.2) 100%);
+
+    transition: background 0.4s linear;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+
+}
+.overcontent-area:hover {
+    background: linear-gradient(rgba(41, 41, 41, 0.8) 0%, rgba(41, 41, 41, 0.1) 100%);
+}
+
+.filtered-section {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 180px 0 0;
+}
+.filters-button-group {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+.filters-button-group .button {
+    margin: 0 -1px 0 0 ;
+    border: 1px solid #AEB7C1;
+    width: 245px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #085155;
+    font-weight: 400;
+    background: transparent;
+    position: relative;
+    z-index: 0;
+}
+.filters-button-group .button.is-checked {
+    z-index: 11;
+    border-color: #085155;
+    outline: none !important;
+}  
+
+.nav-slide {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.slick-arrow {
+    display: none !important;
+
+}
+
+.nav-content {
+    display: none; 
+}
+.slick-current  .nav-content  {
+    display: block;
+}
+
+.testimonial-thumb {
+    width: 135px;
+    margin-top: 120px;
+    margin-bottom: 30px;
+}
+.testimonial-thumb img {
+    width: 100%;
+}
+.nav-content h3{
+    font-size: 24px;
+    color: #000000;
+    font-weight: 400;
+}
+.nav-content span{
+    color: #AAAAAA  ;
+    font-size: 18px;
+    font-weight: 400;
+}
+.review-star  a {
+    color: #FDC350;
+}
+.slick-current  .testimonial-thumb {
+    width: 185px;
+    margin-top: 0px;
+}
+
+.testimonial-slider-section {
+    padding: 216px  0 0;
+}
+.slide-content {
+    margin-top: 90px;
+    text-align: center;
+    font-size: 21px;
+    color: #000000;
+    line-height: 45px;
+    position: relative;
 }

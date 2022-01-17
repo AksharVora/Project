@@ -3,7 +3,8 @@ $(document).ready(function(){
   mainSliderfunction();
 	testimonialSlider();
 	cultureSlider();
-	testimonialSliderv2()
+	testimonialSliderv2();
+	
 
 });
 $(window).on("load" , function(){
@@ -38,6 +39,7 @@ function mainSliderfunction(){
 		
 	{
 			loop: true,
+			speed: 1500,
 			autoplay: {
 			  delay: 5000,
 			},
@@ -154,6 +156,8 @@ function testimonialSliderv2(){
 }
 function marketingSlider(){
 	var swiper = new Swiper(".marketSwiper", {
+		speed: 1500,
+		loop: true,
 		autoplay: {
           delay: 2500,
           disableOnInteraction: false,
@@ -163,4 +167,28 @@ function marketingSlider(){
            clickable: true,
         },
       });
+}
+
+function testimonialSliders(){
+	 $('.slider-for').slick({
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  arrows: false,
+	  fade: false,
+	  asNavFor: '.slider-nav',
+	   autoplay: true,
+  	autoplaySpeed: 4000,
+	});
+	$('.slider-nav').slick({
+	  slidesToShow: 5,
+	  slidesToScroll: 1,
+	  asNavFor: '.slider-for',
+	  dots: false,
+	  centerMode: true,
+	  focusOnSelect: true,
+	  infinite: true,
+	  autoplay: true,
+  	autoplaySpeed: 4000,
+
+	});
 }
