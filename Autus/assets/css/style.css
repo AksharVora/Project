@@ -2753,3 +2753,71 @@ min-height: 210px;
     margin: auto;
 }
 /*contact section styling end here*/
+
+/*Success Stories detail page styling start here*/
+
+    .project-detail-section {
+        background: linear-gradient(rgba(191, 209, 235, 0.3) 0%, rgba(205, 220, 238, 0.36) 10.8%, rgba(223, 234, 243, 0.44) 27.09%, rgba(234, 242, 246, 0.48) 40.97%, rgba(238, 246, 248, 0.49) 50.68%, rgba(234, 242, 244, 0.49) 63.38%, rgba(222, 231, 233, 0.45) 80.27%, rgba(204, 213, 215, 0.8) 99.45%, rgba(204, 213, 215, 0.4) 100%);
+        padding-top: 169px;
+
+    }
+    .project-title {
+        font-size: 60px;
+        font-weight: 500;
+        color: #085155;
+        margin-bottom: 55px;
+    }
+    .pr-main-detail {
+        margin-bottom: 63px;
+    }
+    .pr-main-detail  h4 {
+        font-size: 18px;color: #222A41;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    .pr-main-detail p {
+        font-size: 18px;
+        color: #6D7783;
+        line-height: 24px;
+    }
+    .project-description h4{
+        font-size: 30px;
+        color: #085155;
+        margin-bottom: 36px;
+        font-weight: 500;
+    }
+    .project-description p{
+        font-size: 15px;
+        color: #6D7783;
+        line-height: 24px;
+    }
+    .video-wrapper-outer{
+        position: relative;
+        display: flex;
+        width: 100%;
+    }
+    .play-btn {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .prev-project {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 21px;
+        color: #085155;
+    }
+    .next-project {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        font-size: 21px;
+        color: #085155;
+    }
+/*Success Stories detail page styling end here*/

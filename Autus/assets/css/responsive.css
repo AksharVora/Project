@@ -162,7 +162,7 @@
 	.hero-section , .advisors , .help-tabs-content-area , .how-help , .clients-testimonial  , .newsletter-section , footer.footer , .resources-hub , .get-in-touch , .our-core-values , .problem-solve  , .why-choose , .team-section , .testimonial-section-v2{
 		padding: 50px 0;
 	}
-	.filtered-section  {
+	.filtered-section  , .project-detail-section{
 		padding-top: 50px;
 	}
 	.filters-button-group {
@@ -207,7 +207,7 @@
 	.advisors-section-title-inner p span {
 	    display: inline;
 	}
-	.desc .title, .advisors-section-title-inner h2, .solution-leftarea-inner h2, .how-navigator h3, .clients-title-area .title, .hub-title h3, .e-book-content h4 , .form-outer h3 , .about-discover-content h2  , .section-title h3{
+	.desc .title, .advisors-section-title-inner h2, .solution-leftarea-inner h2, .how-navigator h3, .clients-title-area .title, .hub-title h3, .e-book-content h4 , .form-outer h3 , .about-discover-content h2  , .section-title h3, .project-title{
 		font-size: 28px;
 		line-height: 1.5em;
 	}
@@ -381,6 +381,9 @@
 	}
 	.testimonial-slider-section {
 		padding-top: 50px;
+	}
+	.project-description h4 {
+		margin-bottom: 15px;
 	}
 }
 @media(max-width: 600px){
