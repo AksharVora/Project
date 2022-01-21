@@ -61,6 +61,12 @@
 }
 
 
+@media screen and (max-width: 1280px){
+	.culture-img img{
+		width: 100%;
+	}
+}
+
 @media(max-width: 1199px){
 	.container {
 	    max-width: 100%;
