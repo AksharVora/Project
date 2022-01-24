@@ -472,3 +472,188 @@ p.author {
 .red .service-large-content h3 {
     color: #E22F4C;
 }
+
+
+/* Service page css start */
+
+/* Banner section css start */
+.service-banner-main{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    z-index: 1;
+    height: 500px;
+    background: #4A2264;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.service-banner-main:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/service-shap.png');
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;
+}
+.service-banner-con{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.service-banner-con h2{
+    font-size: 60px;
+    line-height: 80px;
+    font-weight: 600;
+    color: #fff;
+    margin: 0px;
+}
+/* Banner section css end */
+
+/* Website section css start */
+   .website-sec-main{
+        margin: 0px;
+        padding: 120px 126px 120px 220px;
+        position: relative;
+        z-index: 1;
+   } 
+   .website-sec-main:after{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 77%;
+        width: 100%;
+        background: #EDA732;
+        z-index: -1;
+   }
+   .website-left-main{
+        margin: 0px;
+        padding: 0px;
+   }
+   .website-left-inner{
+        margin: 0px;
+        padding: 150px 0 0 0;
+   }
+   .website-left-inner h2{
+        font-size: 48px;
+        line-height: 64px;
+        font-weight: bold;
+        color: #fff;
+        margin: 0 0 50px 0;
+   }
+   .website-left-inner p{
+         font-size: 24px;
+        line-height: 30px;
+        font-weight: 300;
+        color: #fff;
+        width: 80%;
+   }
+   .website-left-inner p:not(:last-child){
+        margin: 0 0 30px 0;
+   }
+   .website-right-main{
+        margin: 0px;
+        padding: 0px;
+   }
+   .website-right-inner{
+        margin: 0px;
+        padding: 0px;
+   }
+   .website-right-inner img{
+        height: 750px;
+        object-fit: cover;
+        width: 100%;
+   }
+/* Website section css end */
+
+/* Process section css start */
+.process-main-sec{
+    margin: 0px;
+    padding: 35px 126px 35px 220px;
+}
+.process-heading-area{
+    margin: 0px;
+    padding: 0px;
+}
+.process-heading-area h2{
+    font-size: 60px;
+    line-height: 80px;
+    color: #333333;
+    font-weight: 600;
+    margin: 0px;
+}
+.process-con-main-area{
+    margin: 85px 0 0 0;
+    padding: 0px;
+}
+.process-con-inner-area{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+.process-tab-links{
+    margin: 0px;
+    padding: 0px;
+    flex: 0 0 15%;
+    max-width: 15%;
+}
+.process-tab-links ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.process-tab-links ul li{
+    margin: 0px;
+    padding: 0px;
+}
+.process-tab-links ul li a{
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 300;
+    color: #333333;
+    margin: 0px;
+    padding: 0 0 20px 0;
+    justify-content: space-between;
+}
+.process-tab-links ul li a i{
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+.process-tab-links ul li a.active{
+    color: #EDA732;
+}
+.process-tab-links ul li a.active i{
+    opacity: 1;
+}
+.process-tab-content-main{
+    margin: 0px auto;
+    padding: 0px;
+    flex: 0 0 800px;
+    max-width: 800px;
+}
+.tabi-con-main-area{
+    margin: 0px;
+    padding: 0px;
+}
+.tabi-con-main-area p{
+    font-size: 24px;
+    line-height: 35px;
+    font-weight: 300;
+    color: #999999;
+}
+.tabi-item-block{
+    display: none;
+}
+.tabi-item-block.active{
+    display: block;
+}
+/* Process section css end */
+
+/* Service page css end */

@@ -79,6 +79,7 @@
 	.navbar-collapse li {
 		border-bottom: 1px solid #5c2c7f;		
 	}
+
 }
 
 @media(max-width: 768px){
@@ -114,6 +115,7 @@
 	.services-slider .swiper-button-prev , .services-slider .swiper-button-next {
 		visibility: hidden;
 	}
+	
 }
 
 @media(max-width: 520px){
