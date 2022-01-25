@@ -517,7 +517,7 @@ p.author {
 /* Website section css start */
    .website-sec-main{
         margin: 0px;
-        padding: 120px 126px 120px 220px;
+        padding: 120px 0;
         position: relative;
         z-index: 1;
    } 
@@ -574,7 +574,7 @@ p.author {
 /* Process section css start */
 .process-main-sec{
     margin: 0px;
-    padding: 35px 126px 35px 220px;
+    padding: 35px 0;
 }
 .process-heading-area{
     margin: 0px;
@@ -656,4 +656,169 @@ p.author {
 }
 /* Process section css end */
 
+/*package section styling start here*/
+    .package-section {
+        padding-top: 110px;
+        background: url(../images/pattern-images.png);
+        padding-bottom: 308px;
+    }
+    .package-box {
+        border-radius: 5px;
+        background: #fff;
+        box-shadow: 40px 40px 80px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+
+    }
+    .package-section .section-title {
+        margin-bottom: 60px;
+    }
+    .package-section .section-title h3{
+        text-align: center;
+        font-weight: 600;
+        font-size: 60px;
+        text-align: center;
+        color: #333;
+    }
+
+    .package-header{
+        border-bottom: 1px solid #f1f2f5;
+        padding: 40px;
+    }
+    .package-header h4 {
+        font-weight: bold;
+        font-size: 64px;
+        letter-spacing: -0.02em;
+        line-height: 83px;
+        text-align: left;
+        color: #4a2264;
+    }
+    .package-header h6{
+        font-weight: 600;
+        font-size: 24px;
+        letter-spacing: -0.03em;
+        line-height: 21px;
+        text-align: left;
+        color: #595f6f;
+        margin-top: 10px;
+    }
+    .package-header span{
+        font-weight: normal;
+        font-size: 14px;
+        letter-spacing: -0.03em;
+        line-height: 21px;
+        text-align: left;
+        color: #595f6f;
+    }
+    .package-detail {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 23px;
+        text-align: left;
+        color: #595f6f;
+        padding: 40px 35px;
+    }
+    .package-detail ul {
+        padding-left: 15px;
+        list-style: disc;
+        color: #EDA732;
+    }
+    .package-detail ul li {
+        margin-top: 20px;
+    }
+    .package-detail ul li p {
+        font-weight: normal;
+        font-size: 14px;
+        text-align: left;
+        color: #595f6f;
+
+    }
+    .package-box.dark{
+        background: rgba(92, 44, 127, 0.9);
+    }
+    .package-box.dark .package-header {
+        background: linear-gradient(#4a2264 0%, #5c2c7f 100%);
+        color: #fff !important;
+        border: none;
+    }
+    .package-box.dark .package-header h4 , .package-box.dark .package-header h6 , .package-box.dark .package-header span , .package-box.dark .package-detail ul li p , .package-box.dark .package-detail p{
+        color: #fff;
+    }
+/*package section styling end here*/
+
+/*webhosting section styling start here*/
+    .website-sec-main:after {
+        background: #61bae9;
+    }
+
+/*webhosting section styling end here*/
+
+/*hosting feature section styling start here*/
+.set{
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 30px 0;
+  margin-top: 42px;
+}
+.set > a{
+  display: block;
+  font-weight: 500;
+    font-size: 30px;
+    line-height: 43px;
+    text-align: left;
+    color: #333;
+  
+  -webkit-transition:all 0.2s linear;
+  -moz-transition:all 0.2s linear;
+  transition:all 0.2s linear;
+}
+.set > a i{
+    float: right;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: left;
+    color: #61bae9;
+}
+.set > a.active{
+  
+}
+.content{
+  background-color: #fff;
+  
+  display:none;
+}
+
+.hosting-title {
+
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 50px;
+    text-align: left;
+    color: #61bae9;
+    margin-bottom: 24px;
+
+}
+.semi-slogan{
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 24px;
+    text-align: left;
+    color: #999;
+}
+.content {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 41px;
+    text-align: left;
+    color: #333;
+    margin-top: 24px;
+}
+/*hosting feature section styling end here*/
 /* Service page css end */
+
+@media(min-width: 1430px){
+    .container-fluid {
+        max-width: 1400px; width: 90%;
+    }
+}
