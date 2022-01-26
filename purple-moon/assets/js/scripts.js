@@ -1,8 +1,36 @@
 $(document).ready(function(){
 	serviceSlider();
+  serviceSlider2()
   videoSlider()
 });
+$(function() {
+           const tabLinks = $('.yellow .process-tab-links li a');
+            
+                tabLinks.click(function(event) {
+                var $this = $(this);
+                
+                event.preventDefault();
+                
+                $('.yellow .process-tab-links a.active, .yellow .tabi-item-block.active').removeClass('active');
+                
+                $this.addClass('active');
+                $($this.attr('href')).addClass('active');
+            });
+            const tabLinks2 = $('.green .process-tab-links li a');
+            
+                tabLinks2.click(function(event) {
+                var $this = $(this);
+                
+                event.preventDefault();
+                
+                $('.green .process-tab-links a.active, .green .tabi-item-block.active').removeClass('active');
+                
+                $this.addClass('active');
+                $($this.attr('href')).addClass('active');
+            });
+        });
 $(document).ready(function() {
+
   $(".set > a").on("click", function(event) {
     event.preventDefault();
     if ($(this).hasClass("active")) {
@@ -37,6 +65,36 @@ $(window).on("load" , function(){
     videoSlider();
   });
 })
+
+function serviceSlider2(){
+  var swiper = new Swiper(".services-slider2", {
+        slidesPerView: 2.5,
+        spaceBetween: 30,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        },
+        loop: true,
+        breakpoints: {
+          // when window width is >= 320px
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 20
+          },
+          // when window width is >= 480px
+          768: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            autoplay:true
+          },
+          // when window width is >= 640px
+          980: {
+            slidesPerView: 2,
+            spaceBetween: 40
+          }
+        }
+      });
+}
 
 function serviceSlider(){
 	var swiper = new Swiper(".services-slider", {
