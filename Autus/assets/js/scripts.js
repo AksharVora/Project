@@ -4,8 +4,8 @@ $(document).ready(function(){
 	testimonialSlider();
 	cultureSlider();
 	testimonialSliderv2();
-	
-
+	aboutSlider()
+	logoSlider();
 });
 $(window).on("load" , function(){
 	if($(window).width() < 980){
@@ -58,6 +58,63 @@ function mainSliderfunction(){
 	     
   })
 }
+jQuery(function($) {
+  
+  // Function which adds the 'animated' class to any '.animatable' in view
+  var doAnimations = function() {
+    
+    // Calc current offset and get all animatables
+    var offset = $(window).scrollTop() + $(window).height(),
+        $animatables = $('.animatable');
+    
+    // Unbind scroll handler if we have no animatables
+    if ($animatables.length == 0) {
+      $(window).off('scroll', doAnimations);
+    }
+    
+    // Check all animatables and animate them if necessary
+		$animatables.each(function(i) {
+       var $animatable = $(this);
+			if (($animatable.offset().top + $animatable.height() - 520) < offset) {
+        $animatable.removeClass('animatable').addClass('animate__animated ');
+			}
+    });
+
+	};
+  
+  // Hook doAnimations on scroll, and trigger a scroll
+	$(window).on('scroll', doAnimations);
+  $(window).trigger('scroll');
+
+});
+
+function logoSlider(){
+	var logoSwiper = new Swiper('.logo-slider', {
+			effect: '',
+			loop: true,
+			speed: 1000,
+			slidesPerView: 5,
+			spaceBetween: 30,
+			autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 1,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 50,
+        },
+      }
+	 });
+}
 
 function testimonialSlider(){
 	var mySwiper2 = new Swiper('.clients-slider', {
@@ -107,20 +164,34 @@ function cultureSlider(){
           disableOnInteraction: false,
         },
         breakpoints: {
-        640: {
+        520: {
           slidesPerView: 1,
           spaceBetween: 20,
         },
         768: {
-          slidesPerView: 1,
+          slidesPerView: 2,
           spaceBetween: 40,
         },
-        1024: {
+        820: {
           slidesPerView: 2,
+          spaceBetween: 50,
+        },
+        1250: {
+          slidesPerView: 3,
           spaceBetween: 50,
         },
       }
 	 });
+
+	$(".culture-slider").mouseenter(function() {
+    mySwiper3.autoplay.stop();
+    console.log('slider stopped');
+  });
+
+  $(".culture-slider").mouseleave(function() {
+    mySwiper3.autoplay.start();
+    console.log('slider started again');
+  });
 }
 
 function testimonialSliderv2(){
@@ -166,6 +237,19 @@ function marketingSlider(){
           el: ".marketSwiper .swiper-pagination",
            clickable: true,
         },
+      });
+}
+
+function aboutSlider(){
+	var aboutswiper = new Swiper(".aboutSwiper", {
+		speed: 1500,
+		loop: true,
+		slidesToShow: 1,
+	  slidesToScroll: 1,
+		autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        }
       });
 }
 

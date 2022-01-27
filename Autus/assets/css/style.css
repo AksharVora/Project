@@ -251,7 +251,7 @@ Base theme styling start here
         padding: 0 30px 0 0;
         transition: color ase-in-out 0.4s;
     }
-    .navigation-area .navbar-nav .nav-link:hover{
+    .navigation-area .navbar-nav .nav-link:hover , .navigation-area .navbar-nav .active .nav-link{
         color: #5FB132;
     }
 /*--------------------------------
@@ -344,6 +344,11 @@ Base theme styling start here
         left: 0;
         top: 0;
         background: none;
+        transition: all 0.5s linear;
+    }
+    .arrow-area .swiper-button-prev:hover, .arrow-area .swiper-button-next:hover{
+            background: rgba(255, 255, 255, 1);
+            
     }
 
     .arrow-area .swiper-button-prev {
@@ -459,13 +464,38 @@ Base theme styling start here
         background-repeat: no-repeat;
         color: #fff;
         border: none;
-        transition: all 0.8s linear;
+        transition: all 0.5s linear;
+        -webkit-transition: all 0.5s linear;
+        -o-transition: all 0.5s linear;
+        position: relative;
+    }
+    .btn-gradient span {
+        position: relative;
+        z-index: 1;
+    }
+    .btn-gradient:after {
+        background: linear-gradient(
+    20deg, rgba(77,134,49,1) 0%, rgba(8,81,85,1) 50%, rgba(4,126,138,1) 100%); 
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        opacity: 0;
+        transition: all 0.5s linear;
+        -webkit-transition: all 0.5s linear;
+        -o-transition: all 0.5s linear;
+
+    }
+    .btn-gradient:hover:after {
+        opacity: 1;
     }
 
     .btn-gradient:hover {
-        background: linear-gradient(
-    20deg, rgba(77,134,49,1) 0%, rgba(8,81,85,1) 50%, rgba(4,126,138,1) 100%);
+        
         padding: 10px 50px;
+        box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
     }
 
     /*
@@ -1109,6 +1139,11 @@ How we work section styling end here
         letter-spacing: 0.073em;
         padding-left: 43px;
         padding-right: 43px;
+        transition: all 0.5s lienear;
+    }
+    .btn-white:hover , .btn-full-jambo:hover {
+        background: rgba(255, 255, 255, 0.5);
+        color: #047E8A;
     }
 
 /*-------------------------------------
@@ -1426,7 +1461,7 @@ How we work section styling end here
     .inner-hero {
         position: relative;
         overflow: hidden;
-        height: 554px;
+        height: 500px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1475,7 +1510,12 @@ How we work section styling end here
         line-height: 35px;
     }
 
-
+    .overflow-hidden {
+        overflow: hidden;
+    }
+    .discover-q-msg  {
+        width: 100%;
+    }
 /*----------------------------------------
  About discover section styling end here
 ----------------------------------------*/
@@ -1583,7 +1623,7 @@ How we work section styling end here
 
     .our-culture .base-img {
 
-        height: 660px;
+        height: 400px;
 
     }
     .our-culture .base-img img {
@@ -1604,11 +1644,16 @@ How we work section styling end here
         display: flex;
         z-index: 11;
     }
+    .top-object img , .bottom-object img{width: 100%;}
+    .culture-inner:hover .bottom-object{
+        opacity: 0;
+    }
     .bottom-object {
         width: 100%;
         display: flex;
         bottom: 0;
         left: 0;
+        transition: all 0.5s linear;
         z-index: 11;
     } 
     .culture-inner:hover .base-content {
@@ -2230,13 +2275,33 @@ packages section styling start here
         align-items: center;
         justify-content: center;
         font-size: 19px;
-
-    }
+        position: relative;
+        overflow: hidden;
+    }   
     .btn-gradient2  svg {
         margin-left: 18px;
         font-size: 22px;
     }
-
+    .btn-gradient2 span {
+        position: relative;
+        z-index: 1;
+    }
+    .btn-gradient2:after {
+        background: linear-gradient(#047e8a 0%, #0b444a 100%);  
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        width: 100%;
+        height: 100%;
+        transform: rotate(0deg);
+        opacity: 0;
+        transition: all 0.5s linear;
+    } 
+    .btn-gradient2:hover:after {
+         transform: rotate(180deg);
+         opacity: 1;
+    }
     .package-box.gradient {
         background: linear-gradient(#047e8a 0%, #0b444a 100%);
     box-shadow: 40px 40px 80px rgba(0, 0, 0, 0.1);
@@ -2247,6 +2312,15 @@ packages section styling start here
     .package-box.gradient  .btn-gradient2{
         background: #fff;
         color: #047E8A !important;
+    }
+    .package-box.gradient  .btn-gradient2 span  , .project-box.gradient .btn-gradient2 span , .element-item .btn-gradient2 span{
+        color: #047E8A !important;   
+    }
+    .package-box.gradient  .btn-gradient2:hover span , .project-box.gradient .btn-gradient2:hover span , .element-item .btn-gradient2:hover span{
+        color: #fff !important;
+    }
+    .package-box.gradient  .btn-gradient2:hover svg  , .package-box.gradient  .btn-gradient2:hover path , .project-box.gradient .btn-gradient2:hover path  , .element-item .btn-gradient2:hover path{
+        fill: #fff;
     }
 /*--------------------------------
 packages section styling start here
@@ -2523,6 +2597,7 @@ growth platform page style start
 -------------------------------------
 -----------------------------------*/
  .growth-section {
+    overflow: hidden;
     padding: 200px 0 0;
     background: linear-gradient(rgba(191, 209, 235, 0.7) 0%, rgba(205, 220, 238, 0.76) 10.8%, rgba(223, 234, 243, 0.84) 27.09%, rgba(234, 242, 246, 0.88) 40.97%, rgba(238, 246, 248, 0.9) 50.68%, rgba(234, 242, 244, 0.89) 63.38%, rgba(222, 231, 233, 0.85) 80.27%, rgba(204, 213, 215, 0.8) 99.45%, rgba(204, 213, 215, 0.8) 100%);
  }
@@ -2812,6 +2887,7 @@ min-height: 210px;
         justify-content: flex-start;
         font-size: 21px;
         color: #085155;
+        transition: all 0.5s linear;
     }
     .next-project {
         display: flex;
@@ -2819,6 +2895,11 @@ min-height: 210px;
         justify-content: flex-end;
         font-size: 21px;
         color: #085155;
+        transition: all 0.5s linear;
+    }
+    .next-project:hover , .prev-project:hover {
+     color: #085155;
+     opacity: 0.5;   
     }
 /*Success Stories detail page styling end here*/
 
@@ -3268,6 +3349,23 @@ background: linear-gradient(rgba(255, 255, 255, 0.4) 0%, #fff 100%);
     width: 55px;
     border: 1px solid #5FB132;
     border-radius: 100%;
+    transition: all 0.5s linear ;
+
+}
+.social-item-inner-block ul li a:hover {
+    box-shadow: 0 0 30px 0 rgb(0 0 0 / 21%);
+    background: #5FB132;
+    color: #fff !important;
+}
+.social-item-inner-block ul li a svg path  {
+    transition: all 0.5s  linear;
+
+}
+.social-item-inner-block ul li a:hover  svg path {
+    fill: #fff;
+}
+.social-item-inner-block ul li a:hover  svg path#Fill_2 {
+    fill:#5FB132 ;
 }
 .getintouch-right-main{
     margin: 0px;
