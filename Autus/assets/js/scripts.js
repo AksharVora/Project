@@ -6,7 +6,9 @@ $(document).ready(function(){
 	testimonialSliderv2();
 	aboutSlider()
 	logoSlider();
+
 });
+ 
 $(window).on("load" , function(){
 	if($(window).width() < 980){
 		$('.nav-wrap .nav-tabs li').hide();

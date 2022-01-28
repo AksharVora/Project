@@ -200,56 +200,19 @@
 
     <!-- marketing hero slider section start here -->
        <section class="marketing-slider">
-            <!-- Swiper -->
-            <div class="swiper marketSwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="slider_inner position-relative">
-                        <img src="assets/images/market-slide.jpg" class="img-fluid">
-                        <div class="position-absolute over-content-area d-flex align-items-center">
-                            <div class="container h-auto">
-                                <div class="row">
-                                    <div class="col-12 col-lg-8">
-                                        <h1>What Is <br>Marketing Automation</h1>
-                                        <h2>Better Quality Leads</h2>
-                                    </div>
-                                </div>
+            
+            <div class=" position-relative inner-hero m-s">
+                <img src="assets/images/market-slide.jpg" class="img-fluid">
+                <div class="position-absolute over-content-area d-flex align-items-center justify-content-center ">
+                    <div class="container h-auto">
+                        <div class="row">
+                            <div class="col-12 col-lg-8 m-auto text-center">
+                                <h1>What Is <br>Marketing Automation</h1>
+                                <h2 ><span class="input">Better Quality Leads</span> </h2>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-slide">
-                    <div class="slider_inner position-relative">
-                        <img src="assets/images/market-slide.jpg" class="img-fluid">
-                        <div class="position-absolute over-content-area d-flex align-items-center">
-                            <div class="container h-auto">
-                                <div class="row">
-                                    <div class="col-12 col-lg-8">
-                                        <h1>What Is <br>Marketing Automation</h1>
-                                        <h2>Better Quality Leads</h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="slider_inner position-relative">
-                        <img src="assets/images/market-slide.jpg" class="img-fluid">
-                        <div class="position-absolute over-content-area d-flex align-items-center">
-                            <div class="container h-auto">
-                                <div class="row">
-                                    <div class="col-12 col-lg-8">
-                                        <h1>What Is <br>Marketing Automation</h1>
-                                        <h2>Better Quality Leads</h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
             </div>
        </section>
     <!-- marketing hero slider section end here -->
@@ -1093,7 +1056,7 @@
                                     <img src="assets/images/email.png" alt="mail">
                                 </div>
                                 <div class="footer-detail">
-                                    <a href="javascript:;">info@etikazdarovya.ru</a>
+                                    <a href="javascript:;">enquiries@autusconsulting.com</a>
                                 </div>
                             </div>
                             <div class="mail">
@@ -1126,7 +1089,7 @@
 
     <!-- Swiper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <!-- Theme js here -->
     <script src="assets/js/scripts.js"></script>
     <script type="text/javascript">
@@ -1315,7 +1278,12 @@
         window.onload = function() {
           ssb.scrollbar('style-4'); // scrollbar initialization
         }
-
+           var typed = new Typed('.input', {
+            strings: ["Better Quality Leads", "Better Quality Leads", "Better Quality Leads", "Better Quality Leads"],
+            typeSpeed: 100,
+            backSpeed:100,
+            loop:true,
+        });
     </script>
 </body>
 
