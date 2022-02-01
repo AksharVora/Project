@@ -5,7 +5,7 @@ $(()=>{
     slider.not('.slick-initialized').slick({
       autoplay: false,
       infinite: true,
-      dots: true,
+      dots: false,
       slidesToShow: 3,
       slidesToScroll: 3,
       responsive: [
@@ -53,22 +53,26 @@ $(document).ready(function(){
 	    {
 	      breakpoint: 1024,
 	      settings: {
-	        slidesToShow: 3,
-	        slidesToScroll: 3,
+	        slidesToShow: 2,
+	        slidesToScroll: 2,
 	        infinite: true,
 	        dots: true
 	      }
 	    },
 	    {
-	      breakpoint: 600,
+	      breakpoint: 767,
 	      settings: {
-	        slidesToShow: 2,
-	        slidesToScroll: 2
+	      	centerMode: false,
+	      	infinite: false,
+	        slidesToShow: 1,
+	        slidesToScroll: 1
 	      }
 	    },
 	    {
 	      breakpoint: 480,
 	      settings: {
+	      	centerMode: false,
+	      	infinite: false,
 	        slidesToShow: 1,
 	        slidesToScroll: 1
 	      }
