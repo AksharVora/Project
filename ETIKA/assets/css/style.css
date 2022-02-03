@@ -299,6 +299,108 @@ Header styling end here
 ----------------------------*/
 
 /*----------------------------
+Footer styling start here
+----------------------------*/
+    
+    footer {
+        background: #Fff;
+        padding: 70px 0 0;
+    }
+    .footer-content {
+        margin:35px 0;
+    }
+    .footer-content  p{
+        font-family: "PT Sans";
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 29px;
+        text-align: left;
+        color: #646464;
+    }
+    .footer-social ul {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .footer-social li {
+        margin-right: 23px;
+    }
+    .footer-social a{
+        width: 43px;
+        height: 43px;
+        background: #646464;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        color: #fff;
+    }
+    .footer-navigation h4 {
+        font-family: "PT Sans";
+        font-weight: bold;
+        font-size: 21px;
+        line-height: 21px;
+        text-align: left;
+        color: #323232;
+        margin-bottom: 26px;
+    }
+    .footer-navigation  ul{
+        display: flex;
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+    }
+    .footer-navigation  ul li  {
+        margin-bottom: 26px;
+    }
+    .footer-navigation  ul li  a {
+        font-family: "PT Sans";
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 14px;
+        text-align: left;
+        color: #646464;
+
+    }
+    .copyright-area {
+        background: #0e498f;
+        padding: 25px 0;
+        margin-top: 70px;
+    }
+    .copyright-area p {
+        color: #fff;
+        font-family: "PT Sans";
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 18px;
+        text-align: left;
+        margin-bottom: 0;
+    }
+    .copyright-area ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+    }
+    .copyright-area ul  li a {
+        padding: 0 40px;
+        color: #fff;
+        font-family: "PT Sans";
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 18px;
+    }
+/*----------------------------
+Footer styling end here
+----------------------------*/
+
+/*----------------------------
 Home page styling start here
 ----------------------------*/
 
@@ -525,7 +627,10 @@ Home page styling start here
     /*Our doctors section styling start here*/
             .our-doctors{
                 padding: 119px 0;
+                position: relative;
             }
+            
+            
             .doctor-img {
                 margin-bottom: 38px;
             }
@@ -548,8 +653,238 @@ Home page styling start here
             .doctor-card  {
                 text-align: center;
             }
+            .gallery {
+                position: relative;
+            }
+            .gallery .section-title {
+                position: absolute;
+                top: 60px;
+                z-index: 11;
+                width: 100%;
+            }
+            .gallery .section-title  h3 {
+                color: #fff;
+            }
+            .gallery .section-title .short-center-divider{
+                background: #fff;
+            }
+            .gallery-screen {
+                position: relative;
+            }
+            .gallery-over{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(85, 85, 85, 0.5);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .gallery-over h4 {
+
+                font-weight: bold;
+                font-size: 23px;
+                line-height: 49px;
+                text-align: center;
+                color: #fff;
+
+            }
+            .gallery-slider.slick-slider .slick-list{
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+            .slick-slide > div {
+                height: 100%;
+                display: flex;
+            }
     /*Our doctors section styling start here*/
+
+    /*map contact section styling start here*/
+        .map-contact-section{
+            position: relative;
+            padding: 108px 0;
+        }
+        .map-contact-section:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.1);
+            height: 100%;
+        }
+        .map-contact-section iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+
+        }
+        .con-box {
+            border-radius: 12px;
+            background: #fff;
+            padding: 109px 90px;
+            position: relative;
+            z-index: 111;
+        }
+
+        .con-item {
+            display: flex;
+            width: 100%;
+            align-items: flex-start;
+            margin-bottom: 40px;
+        }
+        .con-item:last-child{
+            margin-bottom: 0;
+        }
+        .con-item img {
+            margin-right: 40px;
+        }
+        .con-description h4 {
+            font-family: "PT Sans";
+            font-weight: bold;
+            font-size: 21px;
+            line-height: 22px;
+            text-align: left;
+            color: #201f1f;
+            margin-bottom: 10px;
+        }
+        .con-description p{
+            font-family: "PT Sans";
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: left;
+            color: #696969;
+        }
+
+    /*map contact section styling start here*/
 
 /*----------------------------
 Home page styling end here
 ----------------------------*/
+
+
+/*Home page responsive style start here*/
+@media(max-width:1024px){
+    .top-contact span {
+        font-size: 14px;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        font-size: 14px;
+        padding: 0 15px;
+    }
+    .btn-round {
+        font-size: 14px;
+    }
+    .top-contact {
+        margin-left: 30px;
+    }
+    .hero-over-content h1 {
+        font-size: 32px;
+    }
+    .bottom-content {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+    }
+    .service-section {
+        padding-bottom: 30px;
+        margin-top: 30px;
+    }
+    .service-card{
+        padding: 20px;
+    }
+    .our-doctors {
+        padding: 30px;
+    }
+    .about-section {
+        padding: 30px 0;
+    }
+    .footer-navigation{
+        margin-top: 30px;
+    }
+       .navbar-light .navbar-toggler {
+            color: rgb(14 73 143);
+            border-color: rgb(14 73 143);
+            margin-right: 15px;
+        }
+        .bottom-hero {
+            width: 100%;
+            padding-right: 15px !important;
+        }
+        .bottom-hero .ps-0 {
+            padding-right: 15px !important;
+        }
+        .container-fluid{
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+}
+@media(max-width: 980px){
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 11;
+        background: #fff;
+        width: 100%;
+        text-align: center;
+    }
+    .navbar-light .navbar-nav .nav-link{
+        font-size: 16px;
+        text-align: center;
+        width: 100%;
+        padding: 15px 0;
+        border-bottom: 1px solid #d9d9d9;
+    }
+    .navbar-light .navbar-nav li:last-child .nav-link{
+        border: none;
+    }
+}
+@media(max-width: 767px){
+    .hero-over-content h1 {
+        margin-bottom: 15px;
+        margin-top: 30px;
+    }
+    .hero-section {
+        flex-direction: column;
+    }
+    .hero-over-content {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .bg-blue{
+        border-radius: 0;
+        padding-right: 15px !important;
+        margin-top: 30px;
+    }
+    .con-box{
+        padding: 30px;
+    }
+    .copyright-area ul {
+        justify-content: center;
+        margin-top: 15px;
+    }
+    .copyright-area p {
+        text-align: center;
+    }
+    header .btn-round {
+        display: none;
+
+    }
+    .top-bar {
+        display: none;
+    }
+
+}
+/*Home page responsive style start here*/
