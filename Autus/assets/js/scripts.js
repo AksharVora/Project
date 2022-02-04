@@ -6,6 +6,7 @@ $(document).ready(function(){
 	testimonialSliderv2();
 	aboutSlider()
 	logoSlider();
+	quoteSlider();
 
 });
  
@@ -89,7 +90,19 @@ jQuery(function($) {
   $(window).trigger('scroll');
 
 });
-
+function quoteSlider(){
+	var swiper = new Swiper(".quote-slider", {
+		slidesPerView: 1,
+		speed: 2500,
+		loop: true,
+		effect: 'fade',
+		autoplay: false,
+        navigation: {
+	        nextEl: '.why-choose-us .swiper-button-next',
+	        prevEl: '.why-choose-us .swiper-button-prev',
+	      },
+      });
+}
 function logoSlider(){
 	var logoSwiper = new Swiper('.logo-slider', {
 			effect: '',
