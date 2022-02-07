@@ -2398,13 +2398,13 @@ packages section styling start here
         background: #fff;
         color: #047E8A !important;
     }
-    .package-box.gradient  .btn-gradient2 span  , .project-box.gradient .btn-gradient2 span , .element-item .btn-gradient2 span{
+    .package-box.gradient  .btn-gradient2 span  , .project-box.gradient .btn-gradient2 span{
         color: #047E8A !important;   
     }
-    .package-box.gradient  .btn-gradient2:hover span , .project-box.gradient .btn-gradient2:hover span , .element-item .btn-gradient2:hover span{
+    .package-box.gradient  .btn-gradient2:hover span , .project-box.gradient .btn-gradient2:hover span {
         color: #fff !important;
     }
-    .package-box.gradient  .btn-gradient2:hover svg  , .package-box.gradient  .btn-gradient2:hover path , .project-box.gradient .btn-gradient2:hover path  , .element-item .btn-gradient2:hover path{
+    .package-box.gradient  .btn-gradient2:hover svg  , .package-box.gradient  .btn-gradient2:hover path , .project-box.gradient .btn-gradient2:hover path  , .element-item .btn-gradient2:hover path ,  .element-item .btn-gradient2 path{
         fill: #fff;
     }
 /*--------------------------------
@@ -2760,45 +2760,58 @@ growth platform page style start
 }
 
 .element-item  {
-    width: 33.33%;
-   height: 450px;
+    
+   
     overflow: hidden;
 }
 .element-item  img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    
 
 }
 .element-item .btn-gradient2 {
-    background: #fff;
-    color: #047E8A !important;
-    margin-top: auto;
+    
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .element-item h3 {
-    font-size: 32px;
-    color: #fff;
-    font-weight: 700;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 35px;
+    text-align: center;
+    color: #047e8a;
+    margin: 50px 0;
+
 }
 
 .overcontent-area {
-    position: absolute;   
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(41, 41, 41, 0.8) 0%, rgba(41, 41, 41, 0.2) 100%);
-
-    transition: background 0.4s linear;
-    padding: 70px;
+    padding: 15px 0;
     display: flex;
     flex-direction: column;
-
-}
+    margin-bottom: 75px;
+}/*
 .overcontent-area:hover {
     background: linear-gradient(rgba(41, 41, 41, 0.8) 0%, rgba(41, 41, 41, 0.1) 100%);
+}*/
+.filtered-section .section-title h3 {
+    font-weight: 500;
 }
-
+.aspect {
+    padding-bottom: 100%;
+    position: relative;
+    width: 100%;
+}
+.aspect img {
+    position: absolute;
+    top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  object-fit: cover;
+}
 .filtered-section {
     display: flex;
     width: 100%;
@@ -3023,10 +3036,12 @@ min-height: 210px;
 
     }
     .project-title {
-        font-size: 60px;
         font-weight: 500;
-        color: #085155;
-        margin-bottom: 55px;
+        font-size: 60px;
+        line-height: 77px;
+        text-align: left;
+        color: #e60605;
+        margin-bottom: 23px;
     }
     .pr-main-detail {
         margin-bottom: 63px;
@@ -3345,9 +3360,17 @@ color: #595f6f;
     letter-spacing: -0.02em;
     text-align: center;
     color: #595f6f;
-    width: 900px;
+    
     margin-left: auto;
     margin-right: auto;
+}
+@media(max-width: 767px){
+    .video-hub-con-block-inner {
+        margin-bottom: 30px !important;
+    }
+    .fetured-navigation ul {
+        flex-wrap: wrap;
+    }
 }
 .hub-jambo{
     position: relative;
@@ -3458,7 +3481,8 @@ background: linear-gradient(rgba(255, 255, 255, 0.4) 0%, #fff 100%);
 }
 .getintouch-main-sec{
     margin: 0px;
-    padding: 160px 0 0 0;
+    padding: 160px 0;
+    background: #036E78;
 }
 .getintouch-left-main-area{
     margin: 0px;
@@ -3469,10 +3493,10 @@ background: linear-gradient(rgba(255, 255, 255, 0.4) 0%, #fff 100%);
     padding: 0px 0 105px 0;
 }
 .getintouch-left-inner-area h2{
-    font-size: 36;
+    font-size: 36px;
     font-weight: 500;
     line-height: 51px;
-    color: #085155;
+    color: #fff;
     margin: 0 0 25px 0;
 }
 .phone-icon-txt-block{
@@ -3487,7 +3511,7 @@ background: linear-gradient(rgba(255, 255, 255, 0.4) 0%, #fff 100%);
     font-size: 16px;
     font-weight: normal;
     line-height: 24px;
-    color: #6D7783;
+    color: #fff;
     margin: 0px;
 }
 .mail-item-block{
@@ -3502,7 +3526,7 @@ background: linear-gradient(rgba(255, 255, 255, 0.4) 0%, #fff 100%);
     font-size: 16px;
     font-weight: normal;
     line-height: 24px;
-    color: #6D7783;
+    color: #fff;
     margin: 0px;
 }
 .phone-icon-txt-block p span{
@@ -3632,4 +3656,128 @@ background: linear-gradient(rgba(255, 255, 255, 0.4) 0%, #fff 100%);
 .inner-hero.d-s {
     min-height: 512px;
 }
+.ttg-content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    background: #047e8a;
+    
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+}
+.ttg-content h4{
+
+font-weight: bold;
+font-size: 20px;
+text-align: left;
+color: #fff;
+margin-bottom: 25px;
+
+}
+.ttg-content p {
+    font-weight: normal;
+    font-size: 16px;
+    text-align: left;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.ttg-content p a {
+    font-weight: 700;
+    text-decoration: underline;
+    color: #fff;
+}
+.ttg-content > a{
+    font-weight: bold;
+    font-size: 19px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #fff;
+}
+
+.grow-business {
+    padding-top: 145px;
+}
+.grow-business .headings {
+    margin-bottom: 91px !important;
+}
+.grow-business .headings h3 {
+    font-weight: 500;
+    font-size: 48px;
+    letter-spacing: -0.02em;
+    line-height: 1.9;
+    text-align: center;
+    color: #085155;
+    margin-bottom: 26px;
+}
+.grow-business .headings  p {
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #595f6f;
+}
+
 /*Resource hub page styling end here*/
+
+/*success story inner*/
+.eft-box .img-title {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+.eft-box .img-title .eft-icon{
+    margin-right: 10px;
+}
+.eft-box .img-title h4 {
+    max-width: calc(100% - 60px);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 41px;
+    text-align: left;
+    color: #e60605;
+
+}
+
+.eft-content {
+    padding-left: 60px ;
+    position: relative;
+    margin-top: 24px;
+}
+.eft-content:before {
+    width: 8px;
+    height: 100%;
+    top: 0;
+    left: 15px;
+    position: absolute;
+    content: "";
+    background: linear-gradient(#e60605 0%, #bfbfbf 47.78%, #fff 100%);
+}
+.eft-content p{
+    font-weight: normal;
+font-size: 30px;
+line-height: 55px;
+text-align: left;
+color: #6d7783;
+}
+
+.project-short-description {
+    padding: 85px 0;
+    background: #393a3c;
+    margin-top: 100px;
+}
+.bg-white {
+    background: #fff !important; 
+}
+.project-short-description h5 {
+    margin-top: 40px;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+}

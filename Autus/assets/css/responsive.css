@@ -181,6 +181,7 @@
 	}
 	.overcontent-area {
 		padding: 30px;
+		margin-bottom: 15px;
 	}
 	.element-item  {
 		width: 50%;
@@ -375,6 +376,7 @@
 	}
 	.element-item h3 {
 		font-size: 24px;
+		margin: 15px 0;
 	}
 	.slide-content {
 		font-size: 16px;
