@@ -3781,3 +3781,131 @@ color: #6d7783;
     text-align: center;
     color: #fff;
 }
+
+.mini-section {
+    padding: 110px 0;
+
+    box-shadow: inset 20px 0px  21px 0 rgba(0,0,0,.2);
+}
+
+
+.testimonial-mini {
+    text-align: center;
+}
+.testimonial-mini  h5 {
+    font-weight: normal;
+font-size: 45px;
+line-height: 60px;
+text-align: center;
+color: #6d7783;
+
+margin-bottom: 50px;
+}
+.author-detail {
+    margin: 0 auto;
+}
+.author-detail h4 {
+    font-weight: 500;
+font-size: 24px;
+line-height: 39px;
+text-align: center;
+color: #e60605;
+margin: 15px 0 10px;
+
+}
+.author-detail span {
+    display: block;
+    width: 100%;
+    font-weight: normal;
+font-size: 21px;
+text-align: center;
+color: #aaa;
+
+}
+.emini-content.lisiting{
+    max-width: 80%;
+}
+
+.eft-content ul{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.eft-content ul li {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    max-width: 50%;
+    flex: 0  0 50%;
+    margin-bottom: 70px;
+}
+.eft-content ul li {
+    font-weight: normal;
+font-size: 26px;
+line-height: 55px;
+text-align: left;
+color: #6d7783;
+}
+.eft-content ul li  img{
+    margin-right: 20px;
+}
+.emini-content h3{
+    font-weight: 500;
+font-size: 96px;
+line-height: 131px;
+text-align: left;
+color: #e60605;
+
+}
+
+.project-short-description h4 {
+    margin-bottom: 40px;
+    font-weight: 500;
+font-size: 178px;
+line-height: 243px;
+text-align: center;
+color: #e60605;
+
+}
+
+.st-box {
+    position: relative;
+}
+.st-over {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 55px 35px 35px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 0.5s linear;
+}
+.st-box:hover .st-over{
+    background: rgba(0, 0, 0, 0.7);
+}
+.st-over h4 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: left;
+    color: #fff;
+}
+
+.success-stories-section {
+    padding-top: 133px;
+}
+.success-stories-section  h3 {
+
+font-weight: bold;
+font-size: 48px;
+line-height: 75px;
+text-align: center;
+color: #085155;
+margin-bottom: 127px;
+}
