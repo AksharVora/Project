@@ -723,15 +723,15 @@ How we work section styling start here
         left: 0;
 
     }
-    .how-description .img-bg-wrap{
-        max-height: 380px;
-        display: flex;
-        width: 100%;
-        object-fit: cover;
-        object-position: center 30%  ;
-
-    }
-    .how-description .no-gutters {
+    .how-description .img-bg-wrap {
+    display: flex;
+    position: absolute;
+    object-fit: cover;
+    object-position: center 30%;
+    top: 0;
+    left: 0;
+    height: 100%;
+}    .how-description .no-gutters {
         padding: 0;
     }
     .how-detail-area {
@@ -769,7 +769,7 @@ How we work section styling start here
     }
     .how-detail-area p {
         color: #085155;
-        font-size: 28px;
+        font-size: 18px;
         font-weight: 500;
         margin: 0 0 30px;
     }
@@ -777,6 +777,28 @@ How we work section styling start here
         font-weight: 700;
         font-size: 28px;
         color: #085155;
+    }
+
+    .logo-list {
+        padding: 0;
+        margin: 15px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .logo-list li {
+        display:flex;
+        padding: 15px;
+        margin-bottom: 15px;
+        align-items: center;
+        justify-content: center;
+        max-width: 48%;
+        width: 100%;
+        background: #fff;
+        height: 80px ;
+        border-radius: 15px;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+
     }
 
     .nav-wrap {
