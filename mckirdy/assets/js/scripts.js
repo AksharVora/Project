@@ -1,6 +1,16 @@
 AOS.init();
 
 $(document).ready(function(){
+  $('#time').datetimepicker({
+      format: 'hh:mm:ss a'
+  });
+  $('#datetimepicker12').datetimepicker({
+  inline: true,
+  sideBySide: true,
+  format: 'DD-MM-YY',
+  stepping: 30,
+  minDate: moment()
+});
     var helpers = {
         addZeros: function (n) {
             return (n < 10) ? '0' + n : '' + n;

@@ -17,6 +17,7 @@
     <!-- theme style -->
 
     <link rel="stylesheet" href="assets/css/aos.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css" rel=”stylesheet”>
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/all.min.css" />
 
@@ -26,10 +27,10 @@
     
     <!-- header section start here -->
         <header class="header">
-            <nav class="navbar navbar-expand-lg navbar-light ">
+            <nav class="navbar navbar-expand-lg navbar-dark ">
               <div class="container-fluid">
                <a class="navbar-brand me-auto" href="index.html"><img src="assets/images/logo.png" class="img-fluid" alt="mckirdy"></a> 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -51,6 +52,9 @@
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="javascript:;">Buy Now</a>
+                        </li>       
+                        <li class="nav-item mobile-on">
+                          <a class="nav-link" href="javascript:;">Book A Table</a>
                         </li>       
                   </ul>
                 </div>
@@ -87,13 +91,13 @@
                             <div class="slider-counter">  
                               <div class="slide-item">
                                 <div class="row"> 
-                                  <div class="col-12 col-lg-6 d-flex align-items-center">
+                                  <div class="col-12 col-md-6 d-flex align-items-center order-2 order-md-1">
                                     <div class="counter-content">
                                       <h3>Who we are</h3>
                                       <p>The McKirdy's have been butchers in and around the Edinburgh and East Lothian area since 1895, gaining a reputation for  the highest quality meat available.</p>
                                     </div>
                                   </div>
-                                  <div class="col-12 col-lg-6">
+                                  <div class="col-12 col-md-6 order-1 order-md-2">
                                     <div class="slide-img">
                                       <img src="assets/images/slide-1.png" alt="slide-1" class="img-fluid">
                                     </div>
@@ -102,13 +106,13 @@
                               </div>
                               <div class="slide-item">
                                 <div class="row"> 
-                                  <div class="col-12 col-lg-6 d-flex  align-items-center">
+                                  <div class="col-12 col-md-6 d-flex  align-items-center order-2 order-md-1">
                                     <div class="counter-content">
                                       <h3>Who we are</h3>
                                       <p>The McKirdy's have been butchers in and around the Edinburgh and East Lothian area since 1895, gaining a reputation for  the highest quality meat available.</p>
                                     </div>
                                   </div>
-                                  <div class="col-12 col-lg-6">
+                                  <div class="col-12 col-md-6 order-1 order-md-2">
                                     <div class="slide-img">
                                       <img src="assets/images/slide-1.png" alt="slide-1" class="img-fluid">
                                     </div>
@@ -117,13 +121,13 @@
                               </div>
                               <div class="slide-item">
                                 <div class="row"> 
-                                  <div class="col-12 col-lg-6 d-flex  align-items-center">
+                                  <div class="col-12 col-md-6 d-flex  align-items-center order-2 order-md-1">
                                     <div class="counter-content">
                                       <h3>Who we are</h3>
                                       <p>The McKirdy's have been butchers in and around the Edinburgh and East Lothian area since 1895, gaining a reputation for  the highest quality meat available.</p>
                                     </div>
                                   </div>
-                                  <div class="col-12 col-lg-6">
+                                  <div class="col-12 col-md-6 order-1 order-md-2">
                                     <div class="slide-img">
                                       <img src="assets/images/slide-1.png" alt="slide-1" class="img-fluid">
                                     </div>
@@ -167,20 +171,20 @@
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-12 col-lg-4">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-4 col-md-6 mb-4">
                 <div class="menu-image" >
                   <img src="assets/images/pexels-kasumi-loffler-3535383.png" alt="pexels-kasumi-loffler-3535383" class="img-fluid" data-aos="fade-right" >
                 </div>
                 <a href="javascript:;" class="btn btn-line">MAIN MENU</a>
               </div>
-              <div class="col-12 col-lg-4">
+              <div class="col-12 col-lg-4 col-md-6 mb-4">
                 <div class="menu-image" >
                   <img src="assets/images/McKirdys-23-2048x1366-2.png" alt="McKirdys-23-2048x1366-2" class="img-fluid" data-aos="fade-right" >
                 </div>
                 <a href="javascript:;" class="btn btn-line">VEGETARIAN</a>
               </div>
-              <div class="col-12 col-lg-4">
+              <div class="col-12 col-lg-4 col-md-6 mb-4">
                 <div class="menu-image" >
                   <img src="assets/images/pexels-elina-sazonova-1927313.png" alt="pexels-elina-sazonova-1927313" class="img-fluid" data-aos="fade-right" >
                 </div>
@@ -194,10 +198,11 @@
     <!-- our menu section end here -->
 
     <!-- recommanded section start here -->
+     
       <section class="recommanded-section"> 
         <div class="container">
           <div class="row">
-            <div class="col-12 col-lg-6 d-flex align-items-center">
+            <div class="col-12 col-lg-6 d-flex align-items-center order-2 order-lg-1">
               <div class="cmn-content">
                 <h3>RECOMMENDED</h3>
                 <p class="jambo-font">McKirdy’s award winning haggis</h6>
@@ -205,12 +210,13 @@
                 <a href="javascript:;" class="btn btn-line me-auto ms-0 mt-5">VIEW MENU</a>
               </div>
             </div>
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-6 order-1 order-lg-2">
               <img src="assets/images/grd.png" alt="grd" class="img-fluid">
             </div>
           </div>
         </div>
       </section>
+
     <!-- recommanded section end here -->
     <!-- voucher section start here -->
     <section class="recommanded-section voucher"> 
@@ -256,66 +262,66 @@
               <div class="slider-counter">  
                 <div class="slide-item">
                   <div class="row me-0 ms-0">
-                    <div class="col-12 col-lg-4 ps-0 pe-0">
+                    <div class="col-6 col-lg-4 col-md-4 ps-0 pe-0">
                       <img src="assets/images/thmb1.png" alt="thmb1" class="img-fluid">
                     </div>
-                    <div class="col-12 col-lg-4 ps-0 pe-0">
+                    <div class="col-6 col-lg-4 col-md-4 ps-0 pe-0">
                       <img src="assets/images/thmb2.png" alt="thmb2" class="img-fluid">
                     </div>
-                    <div class="col-12 col-lg-4 ps-0 pe-0">
+                    <div class="col-6 col-lg-4 col-md-4 ps-0 pe-0">
                       <img src="assets/images/thmb3.png" alt="thmb1" class="img-fluid">
                     </div>
-                    <div class="col-12 col-lg-4 ps-0 pe-0">
+                    <div class="col-6 col-lg-4 col-md-4 ps-0 pe-0">
                       <img src="assets/images/thmb4.png" alt="thmb4" class="img-fluid">
                     </div>
-                    <div class="col-12 col-lg-4 ps-0 pe-0">
+                    <div class="col-6 col-lg-4 col-md-4 ps-0 pe-0">
                       <img src="assets/images/thmb5.png" alt="thmb5" class="img-fluid">
                     </div>
-                    <div class="col-12 col-lg-4 ps-0 pe-0">
+                    <div class="col-6 col-lg-4 col-md-4 ps-0 pe-0">
                       <img src="assets/images/thmb6.png" alt="thmb6" class="img-fluid">
                     </div>
                   </div>
                 </div>
                 <div class="slide-item">
                   <div class="row me-0 ms-0">
-                    <div class="col-12 col-lg-4 ps-0 pe-0">
+                    <div class="col-6 col-lg-4 col-md-4  ps-0 pe-0">
                       <img src="assets/images/thmb1.png" alt="thmb1" class="img-fluid">
                     </div>
-                    <div class="col-12 col-lg-4 ps-0 pe-0">
+                    <div class="col-6 col-lg-4 col-md-4  ps-0 pe-0">
                       <img src="assets/images/thmb2.png" alt="thmb2" class="img-fluid">
                     </div>
-                    <div class="col-12 col-lg-4 ps-0 pe-0">
+                    <div class="col-6 col-lg-4 col-md-4  ps-0 pe-0">
                       <img src="assets/images/thmb3.png" alt="thmb1" class="img-fluid">
                     </div>
-                    <div class="col-12 col-lg-4 ps-0 pe-0">
+                    <div class="col-6 col-lg-4 col-md-4  ps-0 pe-0">
                       <img src="assets/images/thmb4.png" alt="thmb4" class="img-fluid">
                     </div>
-                    <div class="col-12 col-lg-4 ps-0 pe-0">
+                    <div class="col-6 col-lg-4 col-md-4  ps-0 pe-0">
                       <img src="assets/images/thmb5.png" alt="thmb5" class="img-fluid">
                     </div>
-                    <div class="col-12 col-lg-4 ps-0 pe-0">
+                    <div class="col-6 col-lg-4 col-md-4  ps-0 pe-0">
                       <img src="assets/images/thmb6.png" alt="thmb6" class="img-fluid">
                     </div>
                   </div>
                 </div>
                 <div class="slide-item">
                   <div class="row me-0 ms-0">
-                    <div class="col-12 col-lg-4 ps-0 pe-0">
+                    <div class="col-6 col-lg-4 col-md-4  ps-0 pe-0">
                       <img src="assets/images/thmb1.png" alt="thmb1" class="img-fluid">
                     </div>
-                    <div class="col-12 col-lg-4 ps-0 pe-0">
+                    <div class="col-6 col-lg-4 col-md-4  ps-0 pe-0">
                       <img src="assets/images/thmb2.png" alt="thmb2" class="img-fluid">
                     </div>
-                    <div class="col-12 col-lg-4 ps-0 pe-0">
+                    <div class="col-6 col-lg-4 col-md-4  ps-0 pe-0">
                       <img src="assets/images/thmb3.png" alt="thmb1" class="img-fluid">
                     </div>
-                    <div class="col-12 col-lg-4 ps-0 pe-0">
+                    <div class="col-6 col-lg-4 col-md-4  ps-0 pe-0">
                       <img src="assets/images/thmb4.png" alt="thmb4" class="img-fluid">
                     </div>
-                    <div class="col-12 col-lg-4 ps-0 pe-0">
+                    <div class="col-6 col-lg-4 col-md-4  ps-0 pe-0">
                       <img src="assets/images/thmb5.png" alt="thmb5" class="img-fluid">
                     </div>
-                    <div class="col-12 col-lg-4 ps-0 pe-0">
+                    <div class="col-6 col-lg-4 col-md-4  ps-0 pe-0">
                       <img src="assets/images/thmb6.png" alt="thmb6" class="img-fluid">
                     </div>
                   </div>
@@ -338,6 +344,111 @@
     </section>
   <!-- our Gallery section end here -->
 
+  <!-- contact section start here -->
+
+    <section class="contact-section">
+      <div class="container me-lg-0 ms-auto">
+        <div class="row">
+          <div class="col-12 col-lg-5">
+            <div class="contact-form">
+              <h3>Book a Table</h3>
+              <form class="row form-area">
+                  <div class="form-element">
+                    <label>Full Name</label>
+                    <input type="text" name="" class="txt">
+                  </div>
+                  <div class="form-element">
+                    <label>Phone Number</label>
+                    <input type="tel" name="" class="txt">
+                  </div>
+                  <div class="form-element">
+                    <label>No. of People</label>
+                    <select class="txt">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                    </select>
+                  </div>
+                  <div class="form-element ">
+                    <label>Time</label>
+                    <div class="position-realtive" style="position: relative">
+                      <input class="form-control txt" type="time"/> 
+                    </div>
+                  </div>
+                  <div class="form-element w-100">
+                    <div id="datetimepicker12"></div>
+                  </div>
+                  <b class="text-center"><i>Your table is required to be returned by 6:45 PM</i></b>
+                  <div class="form-element w-100">
+                    <button class="btn btn-form mt-5 ms-auto me-auto">BOOK NOW </button>
+                  </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-12 col-lg-7 pe-lg-0">
+            <div class="map-wrapper">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2234.191935221476!2d-3.2145296838594177!3d55.94604518453843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887c7a38e6328db%3A0xf837b2b7f17bcbf6!2sMcKirdy&#39;s%20Steakhouse!5e0!3m2!1sen!2sin!4v1644584170032!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- contact section end here -->
+
+  <!-- Footer section start here -->
+
+    <footer>
+      <div class="container"> 
+        <div class="row">
+          <div class="col-12 col-lg-2 col-md-6">
+            <a href="javascript:;" class="footer-logo"><img src="assets/images/McKirdys-Logo.png" alt="McKirdys-Logo" class="img-fluid"></a>
+          </div>
+          <div class="col-12 col-lg-3 col-md-6">
+            <ul class="navigation-footer">
+              <li><a href="javascript:;">Menu</a></li>
+              <li><a href="javascript:;">Contact Us</a></li>
+              <li><a href="javascript:;">Book a Table</a></li>
+              <li><a href="javascript:;">Gift Voucher</a></li>
+              <li><a href="javascript:;">Terms & Conditions</a></li>
+              <li><a href="javascript:;">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-3 col-md-6">
+            <h3 class="footer-title">Opening Hours (COVID)</h3>
+            <p>MON & TUES - CLOSED<br>WED & THURS - 5:00 pm – 10:00 pm<br>FRI & SAT - 5:00 pm – 10:30 pm<br>SUN - 5:00 pm – 10:00 pm</p>
+          </div>
+          <div class="col-12 col-lg-4 col-md-6">
+            <p>151-155 Morrison Street, Edinburgh, EH3 8AG<br>0131 229 6660<br>bookings.mckirdys@gmail.com</p>
+            <ul class="social-nav">
+              <li>
+                <a href="javascript:;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="9.397" height="20.139" viewBox="0 0 9.397 20.139">
+                    <path id="Path" d="M6.248,10.068h2.78L9.4,6.6H6.248l0-1.737c0-.905.086-1.39,1.386-1.39H9.377V0H6.6C3.257,0,2.082,1.683,2.082,4.515V6.6H0v3.47H2.082v10.07H6.248Z" fill="#411f16"/>
+                  </svg>
+
+                </a>
+              </li>
+              <li>
+                <a href="javascript:;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20.744" height="20.744" viewBox="0 0 20.744 20.744">
+                      <g id="Group_110" data-name="Group 110" transform="translate(-291.386 -10093.138)">
+                        <path id="Combined_Shape" data-name="Combined Shape" d="M14.44,8.7a7.245,7.245,0,0,0-2.4.459,5.05,5.05,0,0,0-2.888,2.887,7.211,7.211,0,0,0-.459,2.4c-.047,1.053-.059,1.39-.059,4.071s.012,3.017.06,4.07a7.255,7.255,0,0,0,.459,2.4,5.052,5.052,0,0,0,2.887,2.888,7.251,7.251,0,0,0,2.4.459c1.053.048,1.389.06,4.07.06s3.017-.012,4.07-.06a7.255,7.255,0,0,0,2.4-.459,5.058,5.058,0,0,0,2.887-2.888,7.317,7.317,0,0,0,.459-2.4c.047-1.053.06-1.389.06-4.07s-.012-3.018-.06-4.071a7.314,7.314,0,0,0-.459-2.4,5.051,5.051,0,0,0-2.888-2.887,7.267,7.267,0,0,0-2.4-.459c-1.053-.048-1.388-.06-4.07-.06h0C15.83,8.638,15.493,8.65,14.44,8.7Z" transform="translate(283.248 10085)" fill="none" stroke="#411f16" stroke-width="1"/>
+                        <path id="Combined_Shape-2" data-name="Combined Shape" d="M8.093,16.184c-2.631,0-2.944-.01-3.989-.058a5.451,5.451,0,0,1-1.834-.34,3.03,3.03,0,0,1-1.135-.738A3.06,3.06,0,0,1,.4,13.913,5.452,5.452,0,0,1,.057,12.08C.01,11.053,0,10.744,0,8.091S.01,5.13.057,4.1A5.452,5.452,0,0,1,.4,2.27a3.062,3.062,0,0,1,.739-1.135A3.046,3.046,0,0,1,2.271.4,5.471,5.471,0,0,1,4.1.055C5.027.014,5.374,0,7.207,0l.886,0c2.653,0,2.962.01,3.989.057A5.51,5.51,0,0,1,13.915.4a3.049,3.049,0,0,1,1.134.739,3.046,3.046,0,0,1,.739,1.135,5.45,5.45,0,0,1,.339,1.832c.048,1.045.058,1.358.058,3.988s-.01,2.943-.058,3.988a5.449,5.449,0,0,1-.339,1.832,3.283,3.283,0,0,1-1.873,1.873,5.452,5.452,0,0,1-1.834.339C11.037,16.174,10.724,16.184,8.093,16.184Zm0-13.16a5.069,5.069,0,1,0,5.068,5.07A5.075,5.075,0,0,0,8.093,3.025Zm5.269-1.384a1.184,1.184,0,1,0,1.185,1.185A1.186,1.186,0,0,0,13.363,1.641Z" transform="translate(293.666 10095.414)" fill="#411f16"/>
+                        <path id="Shape" d="M6.581,3.291A3.291,3.291,0,1,1,3.291,0h0A3.291,3.291,0,0,1,6.581,3.291Z" transform="translate(298.468 10100.219)" fill="#411f16"/>
+                      </g>
+                    </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <!-- Footer section end here -->
+
     <!-- JavaScript Library -->
     <script src="assets/js/jquery.min.js"></script>
 
@@ -347,6 +458,8 @@
     <!-- Swiper JS -->
     <script src="assets/js/slick.js"></script>
     <script src="assets/js/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
     <!-- Theme js here -->
     <script src="assets/js/scripts.js"></script>
 </body>
