@@ -40,7 +40,7 @@ Web font style start here
 ----------------------------*/
 
     @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap');
-
+    @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 /*----------------------------
 Web font style end here
 ----------------------------*/
@@ -4081,4 +4081,329 @@ margin-bottom: 30px;
 
 .pb-120 {
     padding-bottom: 200px;
+}
+
+.services-packages{
+    padding-top: 155px;
+    padding-bottom: 155px;
+    position: relative;
+}
+.services-packages .container {
+    position: relative;
+    z-index: 111;
+}
+.services-packages .section-title {
+    text-align: center;
+    margin-bottom: 108px;
+}
+.services-packages .section-title h3 {
+    font-weight: 500;
+    font-size: 48px;
+    text-align: center;
+    color: #085155;
+    margin-bottom: 35px;
+}
+.services-packages .section-title p {
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 30px;
+    text-align: center;
+    color: #696871;
+
+}
+.services-packages:after{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(191, 209, 235, 0.7) 0%, rgba(205, 220, 238, 0.76) 10.8%, rgba(223, 234, 243, 0.84) 27.09%, rgba(234, 242, 246, 0.88) 40.97%, rgba(238, 246, 248, 0.9) 50.68%, rgba(234, 242, 244, 0.89) 63.38%, rgba(222, 231, 233, 0.85) 80.27%, rgba(204, 213, 215, 0.8) 99.45%, rgba(204, 213, 215, 0.8) 100%);
+    opacity: 0.45;
+    content: "";
+    top: 0;
+    left: 0;
+}
+.package-card-white {
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 40px 40px 80px rgba(0, 0, 0, 0.1);
+
+    padding: 49.5px 64px;
+}
+.package-card-title{
+    margin-bottom: 34px;
+    display: block;
+}
+.package-card-title h3 {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 21px;
+    text-align: left;
+    color: #047e8a;
+}
+.package-card-white ul  {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.package-card-white p{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+    color: #95a1bb;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 12px;
+}
+.package-card-white ul li{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+    color: #95a1bb;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 12px;
+    padding-left: 30px;
+    background: url(../images/check-green.png) no-repeat left 0px;
+}
+.prdts{
+    font-weight: bold;
+font-size: 48px;
+letter-spacing: -0.02em;
+line-height: 62px;
+text-align: center;
+color: #047e8a;
+}
+
+.package-card-gradient {
+    border-radius: 5px;
+    background: linear-gradient(#047e8a 0%, #0b444a 100%);
+    box-shadow: 40px 40px 80px rgba(0, 0, 0, 0.1);
+    padding: 49.5px 64px;
+}
+.package-card-title{
+    margin-bottom: 34px;
+    display: block;
+}
+.package-card-gradient .package-card-title h3 {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 21px;
+    text-align: left;
+    color: #fff;
+}
+.package-card-gradient ul  {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.package-card-gradient  p{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 12px;
+}
+.package-card-gradient ul li{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+    color: #fff;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 12px;
+    padding-left: 30px;
+    background: url(../images/check-white.png) no-repeat left 0px;
+}
+.package-card-gradient  .prdts{
+    font-weight: bold;
+    font-size: 48px;
+    letter-spacing: -0.02em;
+    line-height: 62px;
+    text-align: center;
+    color: #fff;
+}
+
+
+.package-card-gradient  .btn-gradient2 {
+    background: #fff;
+    color: #047E8A !important;
+}
+.package-card-gradient  .btn-gradient2:hover {
+    color: #fff !important;
+}
+.package-card-gradient  .btn-gradient2:hover path {
+    fill: #fff;
+}
+
+.benifits-section {
+    background: url(../images/shape-bg.png) no-repeat center center;
+    background-size: cover;
+    padding: 104px 0;
+}
+.benifits-section .section-title  {
+    margin-bottom: 125px;
+}
+.benifits-section .section-title  h3{
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 70px;
+    text-align: center;
+    color: #fff;
+
+}
+.benifits-content h4{
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 60px;
+    text-align: left;
+    color: #fff;
+    margin-bottom: 80px;
+
+}
+
+
+.benifits-content .btn-white {
+    border: none;
+    width: 583.25px;
+    height: 96.37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0;
+    font-weight: bold;
+    font-size: 29px;
+    letter-spacing: 0.07em;
+    text-align: center;
+    color: #047e8a;
+
+}
+.bg-white {
+    background: #fff !important;
+}
+.services-packages .container {
+    position: relative;
+    z-index: 1111;
+}
+
+@media(max-width: 991px){
+    .page-sub-title {
+        margin: 20px 0;
+        font-size: 28px;
+        line-height: 1.3;
+        text-align: center;
+    }
+    .hero-btns-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-btns-wrapper a{
+        margin-bottom: 15px;
+    }
+    .service-short-section  {
+        padding: 30px 0;
+    }
+    .service-short-section p {
+        font-size: 16px;
+        line-height: 1.3;
+        margin-bottom: 15px;
+    }
+    .service-short-section p.mt-5{
+        display: none;
+    }
+    .platform-list  {
+        padding: 30px 0;
+    }
+    .platform-list .section-title h3 {
+        margin-bottom: 30px;
+        font-size: 28px;
+        line-height: 1.3;
+    }
+    .platform-box {
+        margin-bottom: 30px;
+    }
+    .platform-box h4 {
+        font-size: 24px;
+        line-height: 1.3;
+        margin-bottom: 15px;
+    }
+    .platform-feature-section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .platform-content {
+        margin-top: 30px;
+    }
+    .platform-feature-section .justify-content-start {
+        justify-content: center !important;
+    }
+    .platform-content h5 {
+        font-size: 16px;
+        margin-bottom: 10px;
+        line-height: 1.3;
+    }
+    .platform-content h4 {
+        font-size: 26px;
+        margin-bottom: 10px;
+        line-height: 1.3;
+    }
+    .platform-content p {
+        font-size: 16px;
+        line-height: 1.3;
+    }
+    .services-packages {
+        padding: 30px 0;
+    }
+    .services-packages .section-title h3 {
+        font-size: 28px;
+        line-height: 1.3;
+        margin-bottom: 30px;
+    }
+    .services-packages .section-title p {
+        font-size: 16px;
+        line-height: 1.3;
+    }
+    .services-packages .section-title {
+        margin-bottom: 30px;
+    }
+    .benifits-section {
+        padding: 30px 0;
+    }
+    .benifits-section .section-title h3 {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+    .benifits-section .section-title {
+        margin-bottom: 30px;
+    }
+    .benifits-content h4 {
+        font-size: 24px;
+        line-height: 1.3;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media(max-width: 600px){
+    .benifits-content .btn-white {
+        width: 100%;
+        font-size: 16px;
+        height: 50px;
+    }
+    .package-card-white , .package-card-gradient{
+        padding: 30px;
+    }
+    .hero-btns-wrapper a {
+    width: auto;
+    padding-left: 5px;
+    padding-right: 4px;
+    font-size: 13px;
+}
 }
