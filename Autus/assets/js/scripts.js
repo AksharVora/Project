@@ -7,6 +7,7 @@ $(document).ready(function(){
 	aboutSlider()
 	logoSlider();
 	quoteSlider();
+	
 
 });
 $(document).ready(function() {
@@ -172,6 +173,37 @@ function testimonialSlider(){
         },
         pagination: {
           el: ".clients-testimonial .swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 1,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 50,
+        },
+      }
+	 });
+}
+function portfolioSlider(){
+	var mySwiper3 = new Swiper('.porfolio-slider', {
+			effect: '',
+			loop: true,
+			speed: 100,
+			slidesPerView: 3,
+			spaceBetween: 0,
+			autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".portfolio-section .swiper-pagination",
           clickable: true,
         },
         breakpoints: {
