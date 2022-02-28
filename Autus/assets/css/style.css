@@ -231,6 +231,7 @@ Base theme styling start here
     .navigation-area{
         margin: 0px;
         padding: 18px 0;
+        background-color: #fff;
     }
     .navigation-area .navbar{
         padding: 0px;
@@ -4897,6 +4898,198 @@ color: #ecf6f8;
         padding-bottom: 203px;
     }
 /*portfolio section start here*/
+/* small business hero cta section styling start here */
+
+    .small-business-hero-cta {
+        padding-top:135px;    
+        
+    }
+    .mt-150 {
+        margin-top:150px;
+    }
+
+    .hero-cta-content h1 {
+        font-weight: bold;
+        font-size: 60px;
+        line-height: 84px;
+        text-align: center;
+        color: #085155;
+        margin-bottom: 60px;
+    }
+    .hero-cta-content  p {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 60px;
+        text-align: center;
+        color: #085155;
+        margin-bottom: 70px;
+    }
+
+    .pr--z {
+        position: relative;
+        z-index: 11;
+        margin-bottom: -150px;
+    }
+    .body-bg-grd {
+        background: linear-gradient(rgba(191, 209, 235, 0.7) 0%, rgba(205, 220, 238, 0.76) 10.8%, rgba(223, 234, 243, 0.84) 27.09%, rgba(234, 242, 246, 0.88) 40.97%, rgba(238, 246, 248, 0.9) 50.68%, rgba(234, 242, 244, 0.89) 63.38%, rgba(222, 231, 233, 0.85) 80.27%, rgba(204, 213, 215, 0.8) 99.45%, rgba(204, 213, 215, 0.8) 100%);
+    }
+
+/* small business hero cta section styling end here */
+
+/* why section styling start here */
+
+    .why-autus {
+        padding-top: 170px;
+        position: relative;
+        background: #dfe8ed;
+    }
+    .why-autus:before {
+        height:637px;
+        top:-210px;
+        width: 100%;
+        background: url(../images/pt-top-1.svg) no-repeat top center;
+        background-size: cover;
+        position: absolute;
+        left:0;
+        content: "";        
+    }
+    .why-autus:before {
+        height:637px;
+        bottom:-210px;
+        width: 100%;
+        background: url(../images/pt-bottom-1.svg) no-repeat top center;
+        background-size: cover;
+        position: absolute;
+        left:0;
+        content: "";        
+    }
+    
+    /* .why-autus:after  {
+        height:100%;
+        top:426px;
+        width: 100%;
+        background: #dfe8ed;
+        position: absolute;
+        left:0;
+        content: "";        
+    } */
+    .why-autus .section-title {
+        margin-bottom: 100px;
+    }
+    .why-autus .section-title p{
+        margin-top:30px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 45px;
+        text-align: center;
+        color: #085155;
+    }
+
+
+    .why-box h4 {
+        font-weight: bold;
+        font-size: 24px;
+        text-align: center;
+        color: #085155;
+        margin-top:40px;
+        margin-bottom: 20px;
+
+    }
+    .why-box p{
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: center;
+        color: #085155;
+
+    }
+    .pb-150 {
+        padding-bottom:150px;
+    }
+
+    .testi-box {
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
+        padding:72px 44px 0;
+    }
+    .testi-box h4 {
+        font-weight: bold;
+        font-size: 24px;
+        text-align: left;
+        color: #19191b;
+        margin-bottom: 20px;
+    }
+    .testi-box .review-star {
+        color: #FFB542;
+        margin-bottom: 44px;
+        display: block;
+    }
+    .testi-box p{
+        font-weight: normal;
+        font-size: 21px;
+        line-height: 39px;
+        text-align: left;
+        color: #19191b;
+        margin-bottom: 20px;
+    }
+
+    .round-img  {
+        position:relative;
+        bottom: -78px;
+    }
+    .feat-content h4 {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 46px;
+        text-align: left;
+        color: #085155;
+        margin-bottom: 10px;
+
+    }
+    .feat-content h3 {
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 46px;
+        text-align: left;
+        color: #085155;
+        margin-bottom: 25px;
+
+    } 
+    .feat-content p{
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 45px;
+        text-align: left;
+        color: #19191b;
+        margin-bottom: 32px;
+    }
+    .feat-content p small{
+        font-weight: normal;
+        font-size: 21px;
+        text-align: left;
+        color: #19191b;
+
+    }
+    .feat-content ul  {
+        margin: 0 ;
+        padding: 0;
+    }
+   .feat-content ul li{
+    font-weight: normal;
+    font-size: 21px;
+    text-align: left;
+    color: #19191b;
+
+    margin-bottom: 12px;
+    padding-left: 30px;
+    background: url(../images/Group-240.png) no-repeat left center;
+    }
+    .feat-content .btn-gradient2 {
+        width:400px;
+        max-width: 100%;
+    }
+/* why section styling end here */
 @media(max-width: 991px){
     .page-sub-title {
         margin: 20px 0;
