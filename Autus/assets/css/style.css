@@ -5269,6 +5269,211 @@ color: #085155;
 .digital-marketing-plan .col-lg-25 .package-header {
     padding:25px;
 }
+
+.nav-item .fas {display:none;}
+@media(max-width:1200px){
+    .nav-item {
+        width:100%;
+    }
+    .nav-item a{height: 50px; display: flex; align-items: center;}
+    ul.navbar-nav.mr-auto {
+        width: 100%;
+    }
+    .nav-item .fas {
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 11;
+        right: 0;
+        top: 0;
+        color: #FFF;
+        background-color: #5fb132;
+    }
+
+    ul.sub-nav {
+        position: relative !important;
+        top:0;display: none;
+        transform: translateY(0) !important;
+        opacity: 1 !important;
+    }
+    .navigation-area .navbar-nav .nav-link .sub-menu {
+        opacity: 1 !important;
+    }
+
+}
+@media (hover: hover) and (pointer: fine) {
+    
+  }
+ul.sub-nav {
+    position: absolute;
+   
+    z-index: -11;
+    background: #fff;
+    padding: 20px; 
+    transform: translateY(-600px);
+    transition: opacity 0.1s linear;
+    min-width:260px;
+    opacity: 0;
+
+}
+.navigation-area .navbar-nav  .nav-item {
+    position: relative;
+}
+.navigation-area .navbar-nav  .nav-item:hover ul.sub-nav {
+    top:100%;
+    opacity: 1;
+    transform: translateY(0);
+z-index: 111;
+}
+ul.sub-nav li a{
+    font-family: 'Maven Pro', sans-serif;
+    
+    padding: 10px 0 !important;
+    display: flex;
+    font-size: 18px;
+    line-height: 21px;
+    color: #777777;
+    padding: 0 30px 0 0;
+    transition: color ase-in-out 0.4s;
+}
+ul.sub-nav li a:hover   , ul.sub-nav li.active a {
+    color: #5FB132;
+}
+
+.schedule-call-section {
+    background-color: #fff;
+    padding-bottom:100px;
+}
+.card-show{
+    box-shadow: 0px 3px 26px rgb(0 0 0 / 26%);
+    background-color: #fff;
+    padding:0 55px;
+    margin-bottom: 120px;;
+}
+.brd-l {
+    border-right:1px solid #D0CCCC;
+}
+.card-show h4{
+
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 56px;
+    text-align: left;
+    color: #707070;
+margin-bottom:15px;    
+}
+.time-detail {
+    display: flex;
+    width: 100%;
+    justify-content:space-around;
+    margin-bottom:40px;
+}
+.time-detail span{
+    font-weight: bold;
+font-size: 21px;
+line-height: 56px;
+text-align: left;
+color: #707070;
+
+
+}
+.card-show  p {
+    font-weight: normal;
+font-size: 21px;
+line-height: 30px;
+text-align: left;
+color: #707070;
+margin-bottom: 33px;
+}
+
+table.table-condensed {
+    width: 100%;
+    
+    border-collapse: separate;
+    border-spacing: 5px;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 30px;
+    text-align: left;
+    color: #707070;
+
+}
+
+table.table-condensed tr {
+    text-align: center;
+}
+table.table-condensed tbody td {
+    
+    cursor: pointer;
+    height:50px;
+    width:50px;
+
+}
+table.table-condensed tbody td.disabled.old {
+    text-decoration: line-through;
+}
+table.table-condensed tbody td.active {
+    background: #a5b7cd;
+    opacity: 0.8;
+    border-radius: 100%;
+} 
+
+.faq-section.gradient-bg  {
+    background: linear-gradient(rgba(191, 209, 235, 0.7) 0%, rgba(205, 220, 238, 0.76) 10.8%, rgba(223, 234, 243, 0.84) 27.09%, rgba(234, 242, 246, 0.88) 40.97%, rgba(238, 246, 248, 0.9) 50.68%, rgba(234, 242, 244, 0.89) 63.38%, rgba(222, 231, 233, 0.85) 80.27%, rgba(204, 213, 215, 0.8) 99.45%, rgba(204, 213, 215, 0.8) 100%);
+}
+.card-body p {
+    margin-bottom: 15px;
+}
+
+.cta-tag p , .cta-tag p a {
+    
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 39px;
+    text-align: center;
+    color: #085155;
+    
+}
+.cta-tag p a {
+    font-weight: 700;
+}
+
+.green-over .overlay:after {
+    background-color: rgba(95, 177, 50, 0.5);    
+}
+.service-short-section.grd {
+    background: #fff;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.service-short-section.grd:after , .grd:after {
+    display: none;
+
+}
+.service-short-section.grd  h4 {
+    
+font-weight: 500;
+font-size: 48px;
+line-height: 65px;
+text-align: center;
+color: #085155;
+
+}
+.service-short-section.grd  h5  {
+    font-weight: normal;
+font-size: 36px;
+line-height: 35px;
+text-align: center;
+color: #085155;
+
+}
+.inner-hero.ac-s.green-over {
+    height: 120vh;
+    max-height:unset;
+}
 @media(min-width:992px){
     .col-lg-25 {
         max-width:20%;

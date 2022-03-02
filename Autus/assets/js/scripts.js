@@ -7,7 +7,7 @@ $(document).ready(function(){
 	aboutSlider()
 	logoSlider();
 	quoteSlider();
-	
+  
 
 });
 $(document).ready(function() {
@@ -36,10 +36,14 @@ $(document).ready(function() {
         .slideDown(200);
     }
   });
+  $("body").on("click" , ".nav-item .fas" , function(){
+    $(this).next(".sub-nav").slideToggle();
+  })
 });
 
  
 $(window).on("load" , function(){
+  
 	if($(window).width() < 980){
 		$('.nav-wrap .nav-tabs li').hide();
 		$('.nav-wrap .nav-tabs  .active').parents("li").show();
