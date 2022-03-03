@@ -4158,7 +4158,7 @@ color: #595f6f;
     position: absolute;
     height: 100%;
     width: 100%;
-    background: linear-gradient(rgba(191, 209, 235, 0.7) 0%, rgba(205, 220, 238, 0.76) 10.8%, rgba(223, 234, 243, 0.84) 27.09%, rgba(234, 242, 246, 0.88) 40.97%, rgba(238, 246, 248, 0.9) 50.68%, rgba(234, 242, 244, 0.89) 63.38%, rgba(222, 231, 233, 0.85) 80.27%, rgba(204, 213, 215, 0.8) 99.45%, rgba(204, 213, 215, 0.8) 100%);
+    background: rgba(95, 177, 50, 0.2);
     opacity: 0.45;
     content: "";
     top: 0;
@@ -4420,7 +4420,7 @@ color: #999;
     color: #9dafbd;
 }
 .feature-content-short {
-    width:618px;
+    width:658px;
     margin-left: auto;
     max-width: 100%;;
 }
@@ -4444,17 +4444,16 @@ color: #999;
     padding-left:30px;
     font-weight: normal;
     font-size: 24px;
-    line-height: 40px;
+    line-height: 35px;
     text-align: left;
-    color: #9dafbd;
-
+    color: #085155;
 }
 .feature-content-short p{
     font-weight: normal;
-font-size: 24px;
-line-height: 35px;
-text-align: left;
-color: #9dafbd;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: left;
+    color: #085155;
 
 }
 .short-text-center {
@@ -5271,6 +5270,35 @@ color: #085155;
 }
 
 .nav-item .fas {display:none;}
+
+.page-sub-title.sp {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 84px;
+    text-align: left;
+    color: #fff;
+    width:604px;
+}
+.inner-hero h5 {
+    
+    font-size: 36px;
+    line-height: 2;
+    text-align: left;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.inner-hero h5 i {
+    font-size: 20px;
+    margin-right: 15px;
+}
+.feature-content-short.sp h3 {
+    font-weight: bold;
+    font-size: 36px;
+    text-align: left;
+    color: #085155;
+
+
+}
 @media(max-width:1200px){
     .nav-item {
         width:100%;
@@ -5474,13 +5502,122 @@ color: #085155;
     height: 120vh;
     max-height:unset;
 }
+.services-packages.grd .platform-feature-section.shaper{
+    position:relative;
+}
+.services-packages.grd .platform-feature-section {
+    background-color: rgba(95, 177, 50, 0.2);
+}
+
+.platform-feature-section.shaper {
+    padding-top:250px !important;
+}
+.services-packages.grd .platform-feature-section.shaper:after {
+    height:637px;
+    top:-360px;
+    width: 100%;
+    background: url(../images/pb-bg.svg) no-repeat bottom center;
+    background-size: cover;
+    position: absolute;
+    left:0;
+    content: "";        
+} 
+
+.icon-round {
+    display: flex;
+    width:177px;
+    height:177px;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #5fb132;
+    border-radius:100%;
+    margin: auto;
+}
+.icon-title{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #5fb132;
+    margin-top: 17px;
+}
+.platform-content.khd h4{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: left;
+    color: #085155;
+    margin-bottom: 0;
+
+}
+.platform-content.khd h3 {
+    font-weight: bold;
+font-size: 36px;
+line-height: 46px;
+text-align: left;
+color: #085155;
+margin-bottom: 50px;
+}
+.platform-content.khd p{
+font-weight: 500;
+font-size: 24px;
+line-height: 45px;
+text-align: left;
+color: #19191b;
+margin-bottom: 15px;
+
+}
+.book-a-demo .form-outer {
+    background-color: transparent;
+    padding:0;
+}
+.book-a-demo .form-outer h3 {
+    font-weight: bold;
+font-size: 60px;
+line-height: 75px;
+text-align: left;
+color: #085155;
+margin-bottom: 55px;
+
+}
+.book-a-demo .form-outer .form-group .form-control {
+    border-radius: 3px;
+    background: #fff;
+    border: 1px solid #dadada;
+    
+}
+.book-a-demo {
+    padding-bottom: 100px;
+}
 @media(min-width:992px){
     .col-lg-25 {
         max-width:20%;
         flex:0 0 20%;
     }
 }
+.testimonials-card {
+    padding-top:100px;
+    padding-bottom: 100px;
+    background: rgba(95, 177, 50, 0.2);
+}
 
+.platform-list.khd h3 {
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 100px;
+    text-align: center;
+    color: #085155;
+}
+.platform-list.khd p{
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 98px;
+    text-align: center;
+    color: #19191b;
+}
+.packages-box.w-bg {
+    background-color: #fff;
+}
 @media(max-width: 991px){
     .page-sub-title {
         margin: 20px 0;
