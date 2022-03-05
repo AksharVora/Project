@@ -11,6 +11,9 @@ $(document).ready(function(){
 
 });
 $(document).ready(function() {
+	$(".more-box > a ").on("click" , function(){
+		$(this).parents(".more-box").toggleClass("active");
+	})
   $(".set > a").on("click", function() {
     if ($(this).hasClass("active")) {
       $(this).removeClass("active");
