@@ -4211,6 +4211,18 @@ color: #595f6f;
     padding-left: 30px;
     background: url(../images/check-green.png) no-repeat left 0px;
 }
+ul.checked-list {
+     padding: 0;
+}
+ul.checked-list li{
+    font-weight: normal;
+    font-size: 21px;
+    text-align: left;
+    color: #19191b;
+    margin-bottom: 12px;
+    padding-left: 30px;
+    background: url(../images/greencheck.png) no-repeat left 0px;
+}
 .prdts{
     font-weight: bold;
 font-size: 48px;
@@ -5806,6 +5818,205 @@ background: rgba(165, 183, 205, 0.15);
 }
 .more-box.active a {
     transform: rotate(180deg);
+}
+@media(min-width: 1700px){
+    .lead-intro-cmn .container-fluid {
+        max-width: 1660px;
+        margin: 0 auto !important; 
+    }
+}
+.lead-intro-cmn .container-fluid {
+    position: relative;
+    z-index: 1;
+}
+.our-process-section.sml .process-box img {
+    max-width: 165px;
+    margin: 0 auto;
+    display: flex;
+}
+.our-process-section.sml .process-box h4 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 26px;
+    margin-bottom: 40px;
+    color: #085155;
+}
+.our-process-section.sml hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 2px dashed #067e8a;
+}
+.wtb-box {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.wtb-box > img {
+    width: 117px;
+    height: 117px;
+}
+.wtb-box .wtb-content {
+    width: calc(100% - 150px);
+    padding-top: 12px;
+}
+.wtb-box .wtb-content h5 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 26px;
+    text-align: left;
+    color: #085155;
+}
+.wtb-box .wtb-content  p{
+    font-weight: normal;
+font-size: 21px;
+text-align: left;
+color: #19191b;
+line-height: 1.3;
+
+}
+.wtb-bottom {
+    bottom: -220px;
+    
+    z-index: 0;
+}
+
+.cta-slog {
+    font-weight: 500;
+font-size: 21px;
+line-height: 45px;
+text-align: center;
+color: #085155;
+padding-top: 142px;
+}
+.lead-features  {
+    padding-bottom: 134px;
+}
+.lead-features .section-title {
+    margin-bottom: 100px;
+}
+
+.lead-feature-box {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.lead-feature-box .lead-icd {
+    width: 113px;
+    height: 113px;
+    border-radius: 10px;
+    background: #eaeceb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 28px;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+}
+.lead-feature-box:hover .lead-icd{
+    background: linear-gradient(#085155 0%, #047e8a 100%);
+}
+.lead-feature-box .lead-icd svg path  {
+    transition: all 0.4s linear;
+}
+.lead-feature-box:hover .lead-icd svg path {
+    fill: #fff ;
+}
+.lead-feature-box  .lead-content {
+    text-align: center;
+}
+.lead-feature-box  .lead-content h4 {
+
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 20px;
+    text-align: center;
+    color: #085155;
+    margin-bottom: 14px;
+}
+.lead-feature-box  .lead-content  p{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #747474;
+}
+.lead-feature-box  .lead-content >a {
+    font-weight: 500;
+    font-size: 18px;
+    
+    text-align: left;
+    color: #047e8a;
+    margin-top: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lead-feature-box  .lead-content >a  i {
+    margin-left: 10px;
+}
+
+.consult-section {
+    background: url(../images/consult-bg.png) no-repeat 0 0 ;
+    background-size: cover;
+    min-height: 1167px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.consult-section h4 {
+    font-weight: bold;
+font-size: 36px;
+line-height: 46px;
+text-align: left;
+color: #085155;
+margin-bottom: 61px;
+}
+.consult-section  p{
+    font-weight: 500;
+font-size: 24px;
+line-height: 45px;
+text-align: left;
+color: #19191b;
+
+}
+.consult-patter {
+    padding: 5rem;
+}
+.calenders {
+    background: #fff;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    z-index: 11;
+    position: relative;
+    padding: 78px 46px;
+}
+.top-0{
+    top: 0;
+}
+.left-0{
+    left: 0;
+}
+.calenders h4 {
+    font-weight: bold;
+font-size: 24px;
+line-height: 56px;
+text-align: left;
+color: #707070;
+margin-bottom: 40px;
+}
+
+.testimonials-lead {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.testimonials-lead  .section-title {
+    margin-bottom: 100px;
 }
 @media(max-width: 991px){
     .page-sub-title {
