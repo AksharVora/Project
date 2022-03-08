@@ -7,8 +7,6 @@ $(document).ready(function(){
 	aboutSlider()
 	logoSlider();
 	quoteSlider();
-  
-
 });
 $(document).ready(function() {
 	$(".more-box > a ").on("click" , function(){
