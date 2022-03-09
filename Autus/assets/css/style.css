@@ -6040,26 +6040,21 @@ margin-bottom: 40px;
     .active-show {
         display: none;
     }
-    .swiper-slide-active .active-show {
+    .slick-wwd .slick-active .active-show {
         display: block;
     }
    
-    .what-we-do-slider .swiper-slide .on-slide  {
+     .slick-wwd .slick-slide .on-slide  {
         width: 100%;
         max-width: 100%;
         flex:0 0 100% ;
     }
-    .what-we-do-slider .swiper-slide-active .on-slide {
+    .slick-wwd .slick-active .on-slide {
         width: 33.33%;
         max-width: 33.33%;
         flex: 0 0 33.33%;
     }
-    .what-we-do-slider .swiper-slide {
-        width: 494px !important;
-    }
-    .what-we-do-slider .swiper-slide-active {
-        width: 1296px !important;
-    }
+   
 
     .slide-content {
         display: flex;
@@ -6077,7 +6072,121 @@ margin-bottom: 40px;
         top: 0;
         left: 0;
     }
+/*.slick-wwd .slick-slide {
+    width: 460px !important;
+}
+.slick-wwd .slick-slide.slick-active {
+    width: 1260px;
+}*/
+.portfolio-image-wrapper {
+    position: relative;
+    padding: 20px;
+}
+.portfolio-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-end;
+    z-index: 11;
+    padding: 40px;
+}
+.portfolio-content h6 {
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #fff;
+    min-height: 55px;
+    margin-bottom: 10px;
+}
+.portfolio-content span {
+    font-weight: normal;
+    font-size: 22px;
+    text-align: left;
+    color: #fff;
 
+}
+.portfolio-slider .slick-prev, .portfolio-slider .slick-next {
+    bottom: -70px;
+    top: unset !important;
+    transform: unset !important;
+    height: 54px;
+    width: 54px;
+ 
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+    display: block !important;
+    border-radius: 100%;
+}
+.portfolio-slider .slick-prev:before, .portfolio-slider .slick-next:before {
+    display: none;
+}
+.portfolio-slider .slick-prev {
+    left: 15px !important;
+    background: #fff url(../images/portfolio-prev.png) no-repeat center center;
+}
+.portfolio-slider .slick-prev:hover {
+ background: #085155 url(../images/portfolio-prev-hover.png) no-repeat center center;   
+}
+.portfolio-slider .slick-next {
+    right: unset;
+    left: 80px !important;
+    background: #fff url(../images/portfolio-next.png) no-repeat center center;
+}
+.portfolio-slider .slick-next:hover {
+ background: #085155 url(../images/portfolio-next-hover.png) no-repeat center center;   
+}
+
+.prev-portfolio {
+    padding: 100px 0 250px;
+    position: relative;
+    z-index: 11;
+}
+.toper {
+    position: relative;
+
+    z-index: 0;
+    top: -150px;
+}
+.bottomer {
+    bottom: -190px;
+    position: relative;
+    z-index: 0;
+}
+.prev-portfolio  .section-title{
+    margin-bottom: 100px;
+}
+
+.lead-content .btn {
+    margin-top: 20px;
+    display: inline-flex !important;
+}
+.farker , .sharker{
+    background: #dee6ed !important;
+}
+.container-fluid.botter {
+    margin-bottom: -340px !important;
+}
+
+.farker  .section-title {
+    margin-bottom: 100px;
+    margin-top: -150px;
+}
+.email-market-spacer {
+    background: #dee6ed !important;
+    padding-top: 100px ;   
+}
+.why-autus.transperent-bg {
+    background: transparent;
+    padding-top: 250px;
+}
+.why-autus.transperent-bg:after , .why-autus.transperent-bg:before{
+    display: none;
+}
 /*email marketin page styling end here*/
 
 @media(max-width: 991px){

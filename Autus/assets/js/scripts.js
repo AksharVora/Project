@@ -332,7 +332,15 @@ function aboutSlider(){
         }
       });
 }
-
+// function wwdSliders(){
+// 	 $('.slick-wwd').slick({
+	  
+// 	  arrows: false,
+// 	  fade: false,
+// 	   autoplay: false,
+//   	autoplaySpeed: 4000,
+// 	});
+// }
 function testimonialSliders(){
 	 $('.slider-for').slick({
 	  slidesToShow: 1,
