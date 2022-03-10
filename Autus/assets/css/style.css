@@ -2335,7 +2335,7 @@ packages section styling start here
         font-weight: 700;
     }
     .package-title{ 
-        font-size: 32px;
+        font-size: 30px;
         font-weight: 700;
         color: #595F6F;
      }
@@ -5212,6 +5212,12 @@ max-width:100%;
     text-align: left;
     color: #19191b;
 }
+
+.digital-marketing-plan .package-box ul.white-checker li   {
+    background: url(../images/group-check-white.png) no-repeat 30px top ;
+
+}
+
 .digital-marketing-plan .package-box.landscape  ul  {
     margin-top: 20px;
     padding-bottom: 0;
@@ -6040,26 +6046,90 @@ margin-bottom: 40px;
     .active-show {
         display: none;
     }
-    .slick-wwd .slick-active .active-show {
+    .what-we-do-slider .swiper-slide-active .active-show {
         display: block;
     }
-   
-     .slick-wwd .slick-slide .on-slide  {
-        width: 100%;
-        max-width: 100%;
-        flex:0 0 100% ;
+    .what-we-do-slider  {
+        padding: 100px 0;
     }
-    .slick-wwd .slick-active .on-slide {
-        width: 33.33%;
-        max-width: 33.33%;
-        flex: 0 0 33.33%;
+    .what-we-do-slider  .section-title {
+        margin-bottom: 90px;
     }
-   
+    .what-we-do-slider .swiper-container .swiper-wrapper {
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+    .what-we-do-slider .swiper-button-prev, .what-we-do-slider .swiper-container-rtl .swiper-button-next , .what-we-do-slider .swiper-button-next, .what-we-do-slider .swiper-container-rtl .swiper-button-prev {
+        background: transparent url(../images/wwd-next.png) no-repeat center center !important;
+        box-shadow: none;
+    }
+    .what-we-do-slider .swiper-button-prev, .what-we-do-slider .swiper-container-rtl .swiper-button-next {
+        left: 0px;
+        transform: rotate(-180deg);
+    }
+     .what-we-do-slider .swiper-button-next, .what-we-do-slider .swiper-container-rtl .swiper-button-prev {
+        right: unset;
 
+        left: 90px;
+
+     }
+     .what-we-do-slider  .swiper-container > .swiper-pagination-fraction {
+        opacity: 0;
+     }
+     .what-we-do-slider  .swiper-pagination-fraction{
+        font-weight: bold;
+        font-size: 74px;
+        line-height: 84px;
+        text-align: left;
+        color: #333;
+
+     }
+     .what-we-do-slider .wwd-content h4{
+        font-weight: bold;
+        font-size: 31px;
+        line-height: 41px;
+        text-align: left;
+        color: #333;
+        margin-bottom: 30px;
+     }
+     .what-we-do-slider .wwd-content p{
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 35px;
+        text-align: left;
+        color: #333;
+
+     }
+    @media screen and (min-width: 768px) {
+      
+      .swiper-slide-active .on-slide {
+        max-width: 40%;
+        flex: 0 0 40%;
+      }
+      .swiper-slide-active .active-show {
+        max-width: 60%;
+        flex: 0 0 60%;
+      }
+    }
+
+    .what-we-do-slider  {
+        overflow: hidden;
+    }
     .slide-content {
         display: flex;
         width: 100%;
         justify-content: space-between;
+    }
+    .slide-content .wwd-content {  
+        display: flex;
+        width: 100%;
+        max-width: 70%;
+        flex-direction: column;
+        text-align: left !important;
+
     }
     .slide-content .controls {
         display: flex;
@@ -6072,12 +6142,6 @@ margin-bottom: 40px;
         top: 0;
         left: 0;
     }
-/*.slick-wwd .slick-slide {
-    width: 460px !important;
-}
-.slick-wwd .slick-slide.slick-active {
-    width: 1260px;
-}*/
 .portfolio-image-wrapper {
     position: relative;
     padding: 20px;
@@ -6187,7 +6251,80 @@ margin-bottom: 40px;
 .why-autus.transperent-bg:after , .why-autus.transperent-bg:before{
     display: none;
 }
+
+
+.digital-marketing-plan.bg-daker {
+    background: transparent;
+}
+
+
+.content-cta-2 {
+    min-height: 780px;
+    padding-top: 261px;
+    padding-bottom: 100px;
+    text-align: center;
+    background: url(../images/cta-bg-2.png) no-repeat 0 top;
+}
+.content-cta-2 p {
+
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 70px;
+    text-align: center;
+    color: #085155;
+
+}
+.content-cta-2 p  a {
+    color: #085155;    
+    font-weight: 700;
+}
 /*email marketin page styling end here*/
+
+
+/*Social media marketing page styling start here*/
+    .mt-minus-100 {
+        margin-top: -200px !important; 
+    }
+
+    .lead-hero-content h4{
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 1;
+        text-align: left;
+        color: #085155;
+        margin-bottom: 35px;
+    }
+    .lead-hero-content  p {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.9;
+        text-align: left;
+        color: #19191b;
+        width: 550px;
+        max-width: 100%;
+
+    }
+    .lead-hero-content ul li {
+        font-weight: normal;
+        font-size: 21px;
+        text-align: left;
+        color: #19191b;
+        margin-bottom: 12px;
+        padding-left: 30px;
+        background: url(../images/Group-240.png) no-repeat left 15px;
+    }
+    .lead-hero .container {
+        position: relative;
+        z-index: 11;
+    }
+    .why-autus.pt-60 {
+        padding-top: 0px;
+        margin-top: 120px;
+    }
+    .lead-intro-cmn.pt-300 {
+        padding-top: 300px;
+    }
+/*Social media marketing page styling start here*/
 
 @media(max-width: 991px){
     .page-sub-title {
@@ -6574,6 +6711,118 @@ margin-bottom: 40px;
     }
     .pb-150 {
         padding-bottom: 50px !important;
+    }
+    .lead-hero {
+        padding-top: 50px;
+
+    }
+    .lead-hero h1 {
+        margin-bottom: 50px;
+        font-size: 28px;
+    }
+    .cbd {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .cbd .what-we-do-content h3  {
+        font-size: 28px;
+    }
+    .what-we-do-content ul:before {
+        top: 0;
+    }
+    .what-we-do-content ul li {
+        background-position: left top;
+    }
+    .prev-portfolio {
+        padding: 50px 0 100px;
+    }
+    .prev-portfolio .container-fluid {
+        padding-left: 15px !important;
+    }
+    .prev-portfolio .container-fluid .col-12 {
+     padding-left: 15px !important;   
+    }
+    .portfolio-image-wrapper  {
+        width: 320px;
+    }
+    .process-boxed {
+        margin-bottom: 30px;
+    } 
+    .liner:after {
+        display: none;
+    }
+    .bottomer {
+        bottom: -300px;
+    }
+    .bg-daker .col-12{
+        margin-bottom: 30px;
+    }
+    .digital-marketing-plan.bg-daker {
+        padding-bottom: 50px;
+    }
+    .content-cta-2 {
+        padding-top: 130px;
+        padding-bottom: 100px;
+        min-height: unset;
+    }
+    .content-cta-2 p {
+        font-size: 28px;
+        line-height: 1.9;
+    }
+    section.lead-intro-cmn.sharker.pt-0.pb-0 {
+        padding-bottom: 170px !important;
+    } 
+    .what-we-do-slider  .swiper-container .swiper-row {
+        flex-direction: column;
+    }
+    .swiper-slide-active .on-slide   , .swiper-slide-active .active-show{
+        max-width: 100%;
+        flex: 0 0 100%;
+    } 
+    .slide-content  {
+        flex-direction: column;
+    }
+    .swiper-slide-active .on-slide {
+        height: 300px;
+    }
+    .swiper-slide-active .on-slide  img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .slide-content .wwd-content {
+        max-width: 100%;
+    }
+    .what-we-do-slider .swiper-button-prev, .what-we-do-slider .swiper-container-rtl .swiper-button-next, .what-we-do-slider .swiper-button-next, .what-we-do-slider .swiper-container-rtl .swiper-button-prev{
+        display: none;
+
+    }
+    .what-we-do-slider .swiper-pagination-fraction {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+    .slide-content {
+        margin-top: 15px;
+    }
+    .what-we-do-slider .wwd-content h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .what-we-do-slider .wwd-content p {
+        font-size: 14px;
+        line-height: 1.3;
+    }
+
+}
+
+@media(max-width: 767px) {
+    .portfolio-image-wrapper {
+        padding: 0;
+    }
+    .portfolio-content {
+        padding: 0;
+        width: calc(100% - 100px);
+        left: 20px;
     }
 }
 

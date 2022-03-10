@@ -7,6 +7,7 @@ $(document).ready(function(){
 	aboutSlider()
 	logoSlider();
 	quoteSlider();
+	specialSlider();
 });
 $(document).ready(function() {
 	$(".more-box > a ").on("click" , function(){
@@ -195,6 +196,44 @@ function testimonialSlider(){
         },
       }
 	 });
+}
+
+function specialSlider(){
+	var kaSwiper1 = new Swiper ('#ka-swiper1', {
+	  pagination: '.swiper-pagination',
+	  loop:true,
+		  paginationClickable: true,
+		  centeredSlides: true,
+		  slidesPerView: 1.5,
+		  spaceBetween : 50,
+		  autoHeight: true,
+		  effect: "coverflow",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 10,
+          modifier: 1,
+          slideShadows: true,
+        },
+		  breakpoints :{
+		    768:{
+		      spaceBetweenSlides: 10
+		    }
+		  },
+		   pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+		  onSlideChangeEnd:function(e){
+		    kaSwiper1.update(true);
+		  }
+		 
+	});
+
 }
 function portfolioSlider(){
 	var mySwiper3 = new Swiper('.porfolio-slider', {
