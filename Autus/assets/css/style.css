@@ -6324,6 +6324,92 @@ margin-bottom: 40px;
     .lead-intro-cmn.pt-300 {
         padding-top: 300px;
     }
+
+    body .lighter{
+        background: #e5ecf2 !important;
+
+     }
+    .v2 .swiper-button-prev, .v2  .swiper-container-rtl .swiper-button-next  {
+        right: unset;
+        left: -80px;
+        bottom: 50%;
+        background: #305f60;
+    }
+    .v2 .swiper-button-next, .v2  .swiper-container-rtl .swiper-button-prev  {
+        right: -80px;
+        background: #305f60;
+        bottom: 50%;
+    }
+    .v2 {
+        overflow: hidden;
+    }
+
+    .v2 .porfolio-slider{
+        overflow: visible;
+    }
+    .v2 .swiper-slide {
+        opacity: 0;
+    }
+    .v2 .swiper-slide-visible {
+        opacity: 1;
+    }
+
+    .content-cta-2.vr2 {
+        background-image: url(../images/vr2.png);
+        background-size: 100% 100%;
+    }
+    .latest-post {
+        padding: 150px 0;
+    }
+    .latest-post .section-title {
+        margin-bottom: 100px;
+    }
+
+    .post-box {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .post-box  .post-content h4 {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 43px;
+        text-align: left;
+        color: #085155;
+        margin-bottom: 11px;
+        margin-top: 32px;
+    }
+    .info-area {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .info-area h6 {
+        font-weight: bold;
+        font-size: 21px;
+        line-height: 32px;
+        text-align: left;
+        color: #085155;
+
+    }
+    .info-area span {
+        font-weight: normal;
+        font-size: 21px;
+        line-height: 32px;
+        text-align: left;
+        color: #999;
+    }
+    .info-area {
+        margin-bottom: 37px;
+    }
+    .post-box   p{
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: left;
+        color: #19191b;
+
+    }
 /*Social media marketing page styling start here*/
 
 @media(max-width: 991px){
@@ -6812,7 +6898,60 @@ margin-bottom: 40px;
         font-size: 14px;
         line-height: 1.3;
     }
+    .mt-minus-100 {
+        margin-top: 0 !important;
+    }
+    .lead-hero-content h4 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    .lead-hero-content p {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+    .lead-hero-content ul{
+        padding-left: 0;
+        margin-top: 15px;
+    }
+    .lead-hero-content ul li{
+        font-size: 16px;
+    }
+    .why-autus.pt-60 {
 
+    }
+    .feat-content h3 {
+        font-size: 28px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+    .feat-content p {
+        font-size: 16px;
+        line-height: 1.5; 
+    }
+    .lead-intro-cmn.pt-300 {
+        padding-top: 100px;
+    }
+    body .lighter.email-market-spacer {
+        padding-top: 50px;
+    }
+    .why-box  {
+        margin-bottom: 30px;
+    }
+    .post-box .post-content h4 {
+        font-size: 24px;
+        margin: 15px 0 ;
+        line-height: 1.3;
+    }
+    .info-area h6 {
+        font-size: 16px;
+
+    }
+    .info-area span {
+        font-size: 14px;
+    }
+    .info-area {
+        margin-bottom: 15px;
+    }
 }
 
 @media(max-width: 767px) {

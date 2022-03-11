@@ -266,6 +266,38 @@ function portfolioSlider(){
       }
 	 });
 }
+function portfolioSlider2(){
+	var mySwiper3 = new Swiper('.porfolio-slider', {
+			effect: '',
+			loop: true,
+			speed: 100,
+			slidesPerView: 3,
+			spaceBetween: 0,
+			watchSlidesVisibility: true,
+			autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      	navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },  
+        breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 1,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 50,
+        },
+      }
+	 });
+}
 
 function cultureSlider(){
 	var mySwiper3 = new Swiper('.culture-slider', {
