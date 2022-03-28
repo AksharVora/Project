@@ -8,6 +8,7 @@ $(document).ready(function(){
 	logoSlider();
 	quoteSlider();
 	specialSlider();
+	qtestiSlider();
 });
 $(document).ready(function() {
 	$(".more-box > a ").on("click" , function(){
@@ -125,6 +126,19 @@ jQuery(function($) {
   $(window).trigger('scroll');
 
 });
+
+function qtestiSlider(){
+	var swiper = new Swiper(".testi-sliders", {
+		slidesPerView: 1,
+		speed: 2500,
+		loop: true,
+		autoplay: false,
+        navigation: {
+	        nextEl: '.testi-sliders .swiper-button-next',
+	        prevEl: '.testi-sliders .swiper-button-prev',
+	      },
+      });
+}
 function quoteSlider(){
 	var swiper = new Swiper(".quote-slider", {
 		slidesPerView: 1,

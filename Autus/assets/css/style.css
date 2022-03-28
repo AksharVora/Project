@@ -7433,7 +7433,7 @@ margin-top: 30px;
 .modal-open .modal {
     overflow-x: hidden;
     overflow-y: auto;
-    display: flex !important;
+    top: 10%;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -7543,6 +7543,10 @@ color: #393a3c;
 }
 .bass-section {
     padding: 50px 0;
+}
+
+.svs .bass-content h4 {
+    color: #004651;
 }
 @media(min-width: 980px){
     .col-lg-1-5 {
@@ -7688,6 +7692,47 @@ margin-bottom: 0;
         line-height: unset;
 
 }
+.svs .about-content-area h5 {
+    color: #004651;
+}
+.svs .about-content-area h3 {
+    color: #563275;
+}
+
+
+.jambo-title-red.svs h3 {
+color: #563275;
+
+}
+.feature-popups.svs .modal-dialog .modal-body {
+    background: #563275;
+}
+
+.video-testimonial-ashd.svs {
+
+    background-image: url(../images/svs-vt.png);
+}
+.testi-sliders .swiper-button-prev, .testi-sliders .swiper-container-rtl .swiper-button-next  , .testi-sliders .swiper-button-next, .testi-sliders .swiper-container-rtl .swiper-button-prev {
+    bottom: 0;
+    left:180px;
+    right: unset;
+}
+.testi-sliders .swiper-button-prev:hover, .testi-sliders .swiper-container-rtl .swiper-button-next:hover  , .testi-sliders .swiper-button-next:hover, .testi-sliders .swiper-container-rtl .swiper-button-prev:hover{
+    background: #563275;
+}
+.brg .testi-sliders .swiper-button-prev:hover, .brg .testi-sliders .swiper-container-rtl .swiper-button-next:hover  , .brg .testi-sliders .swiper-button-next:hover, .brg .testi-sliders .swiper-container-rtl .swiper-button-prev:hover{
+    background: #393a3c;
+}
+
+.testi-sliders .swiper-button-prev:hover svg path, .testi-sliders .swiper-container-rtl .swiper-button-next:hover svg path  , .testi-sliders .swiper-button-next:hover svg path, .testi-sliders .swiper-container-rtl .swiper-button-prev:hover svg path{
+
+    fill: #fff;
+}
+
+ .testi-sliders .swiper-button-next, .testi-sliders .swiper-container-rtl .swiper-button-prev {
+    left:100px;
+    right: unset;
+ }
 @media(max-width: 991px) {
     .page-sub-title {
         margin: 20px 0;
@@ -8287,6 +8332,98 @@ margin-bottom: 0;
      }
      .p-portfolio .section-title{
         margin-bottom: 30px;
+     }
+     .inner-hero .asin h1 {
+        font-size: 38px;
+        line-height: 1.5;
+     }
+     .inner-hero .asin h3 {
+        font-size: 28px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+     }
+     .inner-hero .asin p {
+        font-size: 18px;
+        line-height: 1.3;
+     }
+     .jambo-title-red h3 {
+        font-size: 38px;
+        line-height: 1.3;
+     }
+     .jambo-title-red {
+        padding: 30px 0;
+     }
+     .about-content-area img {
+        margin: 30px 0;
+        width: 100%;
+     }
+     .about-content-area h3 {
+        font-size: 28px ;
+        line-height: 1.3;
+        margin-bottom: 30px;
+     }
+     .about-content-area h5 {
+        font-size: 18px;
+     }
+     .about-content-area p {
+        font-size: 16px;
+        line-height: 1.3;
+     }
+     .feature-popups .modal-dialog .modal-body h4{
+        font-size: 28px;
+        line-height: 1.3;
+     }
+     .pop-title  img {
+        max-width: 80px;
+     }
+     .feature-popups .modal-dialog .modal-body {
+        padding: 30px;
+     }
+     .modal-open .modal  {
+        top: 0;
+     }
+     .mst-section .section-title h3 {
+        font-size: 28px;
+        line-height: 1.3;
+     }
+     .mst-box {
+        margin-top: 30px;
+     }
+     .mst-box h6 {
+        font-size: 18px;
+        line-height: 1.3;
+     }
+     .mst-section {
+        padding-bottom: 30px;
+     }
+     .bass-content h4 {
+        font-size: 28px;
+        line-height: 1.3;
+        margin-bottom: 15px;
+     }
+     .bass-content p {
+        line-height: 1.3;
+     }
+     .bass-section {
+        padding: 30px 0;
+     }
+     .video-testimonial-ashd {
+        background-size: cover;
+     }
+     .testimonial-ashd-content {
+        padding: 30px 0;
+     }
+     .label-ashd {
+        padding: 15px 10px;
+     }
+     .label-ashd h6 {
+        font-size: 16px;
+     }
+     .bottom-0 {
+        margin-bottom: 0;
+     }
+     .sliders-area .testi-box {
+        padding: 0;
      }
 }
 
