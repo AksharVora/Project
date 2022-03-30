@@ -7548,6 +7548,39 @@ color: #393a3c;
 .svs .bass-content h4 {
     color: #004651;
 }
+.cvg .bass-content h4 {
+    color: #28aae1;
+}
+.cvg .about-content-area h3 {
+    color: #1ba2d9;
+}
+.jambo-title-red.cvg h3 {
+color: #1ba2d9;
+}
+.feature-popups.cvg .modal-dialog .modal-body {
+    background: #1ba2d9;
+}
+.video-testimonial-ashd.cvg {
+
+    background-image: url(../images/cvgvideo.png);
+}
+.cvg .testi-sliders .swiper-button-prev:hover, .cvg .testi-sliders .swiper-container-rtl .swiper-button-next:hover  , .cvg .testi-sliders .swiper-button-next:hover, .cvg .testi-sliders .swiper-container-rtl .swiper-button-prev:hover{
+    background: #1ba2d9;
+}
+.testimonials-lead.cvg  {
+    background: #f9f9f9;
+}
+
+.feature-popups.cvg.asa .modal-dialog .modal-body {
+    background: #02b7aa;
+}
+.asa .bass-content h4 {
+    color: #02b7aa;
+}
+.video-testimonial-ashd.svs.asa {
+
+    background-image: url(../images/asavideo.png);
+} 
 @media(min-width: 980px){
     .col-lg-1-5 {
         flex: 0 0 20%;
@@ -8424,6 +8457,9 @@ color: #563275;
      }
      .sliders-area .testi-box {
         padding: 0;
+     }
+     .testi-sliders{
+        padding-bottom: 50px;
      }
 }
 
