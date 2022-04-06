@@ -11,6 +11,9 @@ $(document).ready(function(){
 	qtestiSlider();
 });
 $(document).ready(function() {
+	$(".sidebar-widget h3").on("click" , function(){
+		$(this).next("div").slideToggle('slow');
+	})
 	$(".more-box > a ").on("click" , function(){
 		$(this).parents(".more-box").toggleClass("active");
 	})
