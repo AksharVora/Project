@@ -8283,3 +8283,57 @@ margin-bottom: 50px;
     min-height: unset;
     height: auto;
 }
+
+.light-bg-trans {
+    background: rgb(226 231 235);
+    padding: 100px 0;
+}
+
+.platform-content.spaced  h5{
+font-weight: bold;
+font-size: 36px;
+line-height: 46px;
+text-align: left;
+color: #085155;
+}
+.platform-content.spaced p{
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 2;
+    text-align: left;
+    color: #085155;
+
+}
+.platform-content.spaced {
+    width: 100%;
+}
+
+.wdd2-content h4 {
+    font-weight: bold;
+font-size: 36px;
+line-height: 46px;
+text-align: left;
+color: #085155;
+
+margin-bottom: 30px;
+}
+.wdd2-content  p{
+    font-weight: normal;
+font-size: 24px;
+line-height: 40px;
+text-align: left;
+color: #085155;
+margin-bottom: 50px;
+
+}
+
+.email-market-spacer-2.white-bg {
+    background: #fff;
+    padding-top: 0;
+}
+
+
+.email-market-spacer-2.white-bg  .section-title {
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
