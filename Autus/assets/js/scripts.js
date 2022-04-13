@@ -96,7 +96,12 @@ function mainSliderfunction(){
 
 	    navigation: {nextEl: '.hero-slider  .swiper-button-next',prevEl: '.hero-slider  .swiper-button-prev',
 	    },
-	     
+	    on: {
+		    slideChangeTransitionStart: function () {
+		      $('.swiper-slide .animate__animated').addClass('animate-init').removeClass('animate__animated animate__delay-2s animate__fadeIn');
+		      $('.swiper-slide-active .animate-init').removeClass('animate-init').addClass('animate__animated animate__delay-2s animate__fadeIn');
+		    },
+	     }
 	     
   })
 }
